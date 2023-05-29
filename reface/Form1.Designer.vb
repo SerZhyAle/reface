@@ -131,7 +131,7 @@ Partial Class F
         TabsBlock.Controls.Add(PageTasks)
         TabsBlock.Controls.Add(PageSettings)
         TabsBlock.Controls.Add(TabResult)
-        TabsBlock.Font = New Font("Segoe UI", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
+        TabsBlock.Font = New Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point)
         TabsBlock.Location = New Point(4, 5)
         TabsBlock.Margin = New Padding(4, 5, 4, 5)
         TabsBlock.Name = "TabsBlock"
@@ -154,7 +154,7 @@ Partial Class F
         PageTask.Controls.Add(LabelFace)
         PageTask.Controls.Add(TextFace)
         PageTask.Controls.Add(TabControlSource)
-        PageTask.Font = New Font("Segoe UI", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
+        PageTask.Font = New Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point)
         PageTask.Location = New Point(4, 22)
         PageTask.Margin = New Padding(4, 5, 4, 5)
         PageTask.Name = "PageTask"
@@ -166,7 +166,7 @@ Partial Class F
         ' 
         ' PictureBoxFace
         ' 
-        PictureBoxFace.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        PictureBoxFace.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         PictureBoxFace.BackColor = Color.WhiteSmoke
         PictureBoxFace.Location = New Point(624, 0)
         PictureBoxFace.Margin = New Padding(4, 5, 4, 5)
@@ -178,6 +178,7 @@ Partial Class F
         ' 
         ' ReFace
         ' 
+        ReFace.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         ReFace.Font = New Font("Segoe UI", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
         ReFace.Location = New Point(588, 5)
         ReFace.Name = "ReFace"
@@ -205,6 +206,7 @@ Partial Class F
         ' 
         ' CheckBoxFaceHidden
         ' 
+        CheckBoxFaceHidden.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         CheckBoxFaceHidden.AutoSize = True
         CheckBoxFaceHidden.Font = New Font("Segoe UI", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
         CheckBoxFaceHidden.Location = New Point(572, 40)
@@ -241,6 +243,7 @@ Partial Class F
         ' 
         ' ButFaceFolder
         ' 
+        ButFaceFolder.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         ButFaceFolder.Enabled = False
         ButFaceFolder.Font = New Font("Segoe UI", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
         ButFaceFolder.Location = New Point(500, 40)
@@ -266,6 +269,7 @@ Partial Class F
         ' 
         ' ButtonFaceFile
         ' 
+        ButtonFaceFile.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         ButtonFaceFile.Font = New Font("Segoe UI", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
         ButtonFaceFile.Location = New Point(500, 5)
         ButtonFaceFile.Margin = New Padding(4, 5, 4, 5)
@@ -287,6 +291,7 @@ Partial Class F
         ' 
         ' TextFace
         ' 
+        TextFace.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         TextFace.BackColor = SystemColors.Info
         TextFace.Font = New Font("Segoe UI", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
         TextFace.Location = New Point(48, 5)
@@ -408,6 +413,7 @@ Partial Class F
         ' 
         ' ReSource
         ' 
+        ReSource.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         ReSource.Font = New Font("Segoe UI", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
         ReSource.Location = New Point(596, 5)
         ReSource.Name = "ReSource"
@@ -484,6 +490,7 @@ Partial Class F
         ' 
         ' ButtonSourceImageFolder
         ' 
+        ButtonSourceImageFolder.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         ButtonSourceImageFolder.Font = New Font("Segoe UI", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
         ButtonSourceImageFolder.Location = New Point(488, 40)
         ButtonSourceImageFolder.Margin = New Padding(4, 5, 4, 5)
@@ -519,6 +526,7 @@ Partial Class F
         ' 
         ' ButtonSourceImageFile
         ' 
+        ButtonSourceImageFile.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         ButtonSourceImageFile.Font = New Font("Segoe UI", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
         ButtonSourceImageFile.Location = New Point(488, 5)
         ButtonSourceImageFile.Margin = New Padding(4, 5, 4, 5)
@@ -540,6 +548,7 @@ Partial Class F
         ' 
         ' TextBoxSourceImage
         ' 
+        TextBoxSourceImage.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         TextBoxSourceImage.BackColor = SystemColors.GradientInactiveCaption
         TextBoxSourceImage.Font = New Font("Segoe UI", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
         TextBoxSourceImage.Location = New Point(44, 5)
@@ -586,6 +595,7 @@ Partial Class F
         ' 
         ' TextBoxNameSourceVideo
         ' 
+        TextBoxNameSourceVideo.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         TextBoxNameSourceVideo.Font = New Font("Segoe UI", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
         TextBoxNameSourceVideo.Location = New Point(52, 5)
         TextBoxNameSourceVideo.Name = "TextBoxNameSourceVideo"
@@ -636,7 +646,7 @@ Partial Class F
         ' 
         ' ButtonSourceVideoPlay
         ' 
-        ButtonSourceVideoPlay.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        ButtonSourceVideoPlay.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         ButtonSourceVideoPlay.Font = New Font("Segoe UI", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
         ButtonSourceVideoPlay.Location = New Point(700, 5)
         ButtonSourceVideoPlay.Margin = New Padding(4, 5, 4, 5)
@@ -648,6 +658,7 @@ Partial Class F
         ' 
         ' ButtonSourceVideoFolder
         ' 
+        ButtonSourceVideoFolder.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         ButtonSourceVideoFolder.Font = New Font("Segoe UI", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
         ButtonSourceVideoFolder.Location = New Point(490, 35)
         ButtonSourceVideoFolder.Margin = New Padding(4, 5, 4, 5)
@@ -659,6 +670,7 @@ Partial Class F
         ' 
         ' CheckBoxSourceVideoFromFolder
         ' 
+        CheckBoxSourceVideoFromFolder.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         CheckBoxSourceVideoFromFolder.AutoSize = True
         CheckBoxSourceVideoFromFolder.Font = New Font("Segoe UI", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
         CheckBoxSourceVideoFromFolder.Location = New Point(364, 30)
@@ -671,6 +683,7 @@ Partial Class F
         ' 
         ' ButtonSourceVideoFile
         ' 
+        ButtonSourceVideoFile.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         ButtonSourceVideoFile.Font = New Font("Segoe UI", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
         ButtonSourceVideoFile.Location = New Point(490, 5)
         ButtonSourceVideoFile.Margin = New Padding(4, 5, 4, 5)
@@ -682,7 +695,7 @@ Partial Class F
         ' 
         ' ButtonVideoAddTask
         ' 
-        ButtonVideoAddTask.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        ButtonVideoAddTask.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         ButtonVideoAddTask.Font = New Font("Segoe UI", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
         ButtonVideoAddTask.Location = New Point(700, 35)
         ButtonVideoAddTask.Margin = New Padding(4, 5, 4, 5)
@@ -694,7 +707,7 @@ Partial Class F
         ' 
         ' ButtonVideoStart
         ' 
-        ButtonVideoStart.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        ButtonVideoStart.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         ButtonVideoStart.Font = New Font("Segoe UI", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
         ButtonVideoStart.Location = New Point(560, 5)
         ButtonVideoStart.Margin = New Padding(4, 5, 4, 5)
@@ -801,7 +814,7 @@ Partial Class F
         ListBox1.Name = "ListBox1"
         ListBox1.ScrollAlwaysVisible = True
         ListBox1.SelectionMode = SelectionMode.MultiSimple
-        ListBox1.Size = New Size(764, 433)
+        ListBox1.Size = New Size(764, 394)
         ListBox1.TabIndex = 0
         ' 
         ' PageSettings
@@ -1098,7 +1111,7 @@ Partial Class F
         ' ButtonOpenLastFile
         ' 
         ButtonOpenLastFile.Anchor = AnchorStyles.Bottom Or AnchorStyles.Right
-        ButtonOpenLastFile.Font = New Font("Segoe UI", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
+        ButtonOpenLastFile.Font = New Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point)
         ButtonOpenLastFile.Location = New Point(552, 525)
         ButtonOpenLastFile.Margin = New Padding(4, 5, 4, 5)
         ButtonOpenLastFile.Name = "ButtonOpenLastFile"

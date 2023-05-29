@@ -270,11 +270,13 @@ Public Class F
 
         Left = Val(GetSetting("SZA reFACE", "SET", "Left"))
         If Left < 0 Then
-            Left = 0
+            Left = 10
+            Width = 800
         End If
         Top = Val(GetSetting("SZA reFACE", "SET", "Top"))
         If Top < 0 Then
-            Top = 0
+            Top = 10
+            Height = 640
         End If
         CheckBoxFaceHidden.Checked = If(GetSetting("SZA reFACE", "SET", "CheckBoxFaceHidden") = "Y", True, False)
         CheckBoxSourceHidden.Checked = If(GetSetting("SZA reFACE", "SET", "CheckBoxSourceHidden") = "Y", True, False)
@@ -286,6 +288,11 @@ Public Class F
         TextBoxSourceName.Text = GetSetting("SZA reFACE", "SET", "TextBoxSourceName")
 
         terminateCheckBoxBehavior = False
+
+        Left = 10
+        Width = 800
+        Top = 10
+        Height = 640
 
     End Sub
 

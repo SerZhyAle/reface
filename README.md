@@ -6,3 +6,6 @@ primitive Windows Application to run SimSwap: https://github.com/neuralchen/SimS
 
 some .py files have to be set in simswap folder and replaced
 Do the backup of originals before!
+
+exe:
+reface/bin/Debug/net6.0-windows/reface.exe

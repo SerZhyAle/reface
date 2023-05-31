@@ -283,6 +283,8 @@ Public Class F
         CheckBoxRunMinimized.Checked = If(GetSetting("SZA reFACE", "SET", "CheckBoxRunMinimized") = "Y", True, False)
         CheckBox512.Checked = If(GetSetting("SZA reFACE", "SET", "CheckBox512") = "Y", True, False)
         CheckBoxNoWindow.Checked = GetSetting("SZA reFACE", "SET", "CheckBoxNoWindow") = "Y"
+        CheckBoxNoWindowForVideo.Checked = GetSetting("SZA reFACE", "SET", "CheckBoxNoWindowForvideo") = "Y"
+        CheckBoxForAllFaces.Checked = GetSetting("SZA reFACE", "SET", "CheckBoxForAllFaces") = "Y"
 
         TextBoxName.Text = GetSetting("SZA reFACE", "SET", "TextBoxName")
         TextBoxSourceName.Text = GetSetting("SZA reFACE", "SET", "TextBoxSourceName")
@@ -320,6 +322,9 @@ Public Class F
         SaveSetting("SZA reFACE", "SET", "CheckBoxRunMinimized", If(CheckBoxRunMinimized.Checked = True, "Y", "N"))
         SaveSetting("SZA reFACE", "SET", "CheckBox512", If(CheckBox512.Checked = True, "Y", "N"))
         SaveSetting("SZA reFACE", "SET", "CheckBoxNoWindow", If(CheckBoxNoWindow.Checked = True, "Y", "N"))
+        SaveSetting("SZA reFACE", "SET", "CheckBoxNoWindowForVideo", If(CheckBoxNoWindowForVideo.Checked = True, "Y", "N"))
+
+        SaveSetting("SZA reFACE", "SET", "CheckBoxForAllFaces", If(CheckBoxForAllFaces.Checked = True, "Y", "N"))
 
         SaveSetting("SZA reFACE", "SET", "TextBoxName", TextBoxName.Text)
         SaveSetting("SZA reFACE", "SET", "TextBoxSourceName", TextBoxSourceName.Text)
@@ -547,7 +552,7 @@ Public Class F
             'textvalue = "111.111.111.111"
             'Dim vmdtxt As String
             'vmdtxt = "netsh advfirewall firewall add rule name=""IP Block Test2"" dir=in interface=any action=block remoteip=" + textvalue + ""
-            RunCommandCom(Forun, "", False, False)
+            RunCommandCom(Forun, "", False, False, True)
 
         Catch ex As Exception
             MsgBox("Unable to start: " + ex.ToString)
@@ -555,7 +560,7 @@ Public Class F
 
     End Sub
 
-    Private Sub RunCommandCom(command As String, arguments As String, permanent As Boolean, waitForExit As Boolean)
+    Private Sub RunCommandCom(command As String, arguments As String, permanent As Boolean, waitForExit As Boolean, show_window As Boolean)
 
         'Dim p As Process = New Process()
         'Dim pi As ProcessStartInfo = New ProcessStartInfo()
@@ -582,7 +587,7 @@ Public Class F
         process.StartInfo.Arguments = " " + If(permanent = True, "/K", "/C") + " " + command + " " + arguments
         process.StartInfo.FileName = "cmd.exe"
         process.StartInfo.Verb = "runas"
-        If CheckBoxNoWindow.Checked = True Then
+        If Not show_window Then
             process.StartInfo.CreateNoWindow = True
         End If
         If CheckBoxRunMinimized.Checked = True Then
@@ -604,11 +609,11 @@ Public Class F
     End Sub
 
     Private Sub ButtonTempFolder_Click(sender As Object, e As EventArgs) Handles ButtonTempFolder.Click
-        RunCommandCom("start explorer " + TextSimSwapFolder.Text + "\temp_results", "", False, False)
+        RunCommandCom("start explorer " + TextSimSwapFolder.Text + "\temp_results", "", False, False, True)
     End Sub
 
     Private Sub ButtonOpenOutputFolder_Click(sender As Object, e As EventArgs) Handles ButtonOpenOutputFolder.Click
-        RunCommandCom("start explorer " + TextBoxOutputFolder.Text, "", False, False)
+        RunCommandCom("start explorer " + TextBoxOutputFolder.Text, "", False, False, True)
     End Sub
 
     Private Sub PictureBoxFace_Click(sender As Object, e As EventArgs) Handles PictureBoxFace.Click
@@ -629,15 +634,13 @@ Public Class F
         file.Close()
 
         Try
-            RunCommandCom(command_file_address, "", False, True)
+            RunCommandCom(command_file_address, "", False, True, Not CheckBoxNoWindow.Checked)
             'TextFace.Text = face_file_address
             'CheckBoxFacesFromFolder.Checked = False
             refreshFaceImage(face_file_address)
         Catch ex As Exception
             MsgBox("Unable to start: " + ex.ToString)
         End Try
-
-        '  RunCommandCom(command_file_address, "", False)
 
     End Sub
 
@@ -714,7 +717,7 @@ Public Class F
             Form2.Timer1.Enabled = True
         End If
 
-        RunCommandCom(command_file_address, "", False, one_by_one)
+        RunCommandCom(command_file_address, "", False, one_by_one, Not CheckBoxNoWindow.Checked)
 
     End Sub
 
@@ -766,7 +769,7 @@ Public Class F
             result_file_address = TextBoxOutputFolder.Text + "\" + result_file_name
 
             all_tasks = all_tasks +
-            "python swap_face_folder_source" + If(InStr(face_file, "face_prepared"), "_prepared", "") +
+            "python swap_face_folder_source" + If(InStr(face_file, "face_prepared"), "_prepared", "") + If(CheckBoxForAllFaces.Checked, "_multi", "") +
                        ".py --isTrain false --no_simswaplogo --use_mask --name people --Arc_path arcface_model/arcface_checkpoint.tar --pic_a_path " +
                        Chr(34) + TextFace.Text + Chr(34) +
                        If(CheckBox512.Checked = True, " --crop_size 512 ", "") + " --pic_b_path " + Chr(34) +
@@ -826,7 +829,7 @@ Public Class F
             result_file_address = TextBoxOutputFolder.Text + "\" + result_file_name
 
             all_tasks = all_tasks +
-            "python swap_face" + If(InStr(face_file, "face_prepared"), "_prepared", "") +
+            "python swap_face" + If(InStr(face_file, "face_prepared"), "_prepared", "") + If(CheckBoxForAllFaces.Checked, "_multi", "") +
                        ".py --isTrain false --no_simswaplogo --use_mask --name people --Arc_path arcface_model/arcface_checkpoint.tar --pic_a_path " +
                        Chr(34) + TextFace.Text + Chr(34) +
                        If(CheckBox512.Checked = True, " --crop_size 512 ", "") + " --pic_b_path " + Chr(34) +
@@ -897,7 +900,7 @@ Public Class F
             result_file_address = TextBoxOutputFolder.Text + "\" + result_file_name
 
             all_tasks = all_tasks +
-            "python swap_face_folder_source_video" + 'If(InStr(face_file, "face_prepared"), "_prepared", "") +
+            "python swap_face_folder_source_video" + If(InStr(face_file, "face_prepared"), "_prepared", "") + If(CheckBoxForAllFaces.Checked, "_multi", "") +
                        ".py --isTrain false --no_simswaplogo --use_mask --name people --Arc_path arcface_model/arcface_checkpoint.tar --pic_a_path " +
                        Chr(34) + TextFace.Text + Chr(34) +
                        If(CheckBox512.Checked = True, " --crop_size 512 ", "") + " --pic_b_path " + Chr(34) +
@@ -958,7 +961,7 @@ Public Class F
             result_file_address = TextBoxOutputFolder.Text + "\" + result_file_name
 
             all_tasks = all_tasks +
-            "python swap_face_video" + ' If(InStr(face_file, "face_prepared"), "_prepared", "") +
+            "python swap_face_video" + If(InStr(face_file, "face_prepared"), "_prepared", "") + If(CheckBoxForAllFaces.Checked, "_multi", "") +
                        ".py --isTrain false --no_simswaplogo --use_mask --name people --Arc_path arcface_model/arcface_checkpoint.tar --pic_a_path " +
                        Chr(34) + TextFace.Text + Chr(34) +
                        If(CheckBox512.Checked = True, " --crop_size 512 ", "") + " --pic_b_path " + Chr(34) +
@@ -1027,7 +1030,7 @@ Public Class F
     End Sub
 
     Private Sub ButtonOutputOpen_Click(sender As Object, e As EventArgs) Handles ButtonOutputOpen.Click
-        RunCommandCom("start explorer ", TextBoxOutputFolder.Text, False, False)
+        RunCommandCom("start explorer ", TextBoxOutputFolder.Text, False, False, True)
     End Sub
 
     Private Sub ButtonTasksRemove_Click(sender As Object, e As EventArgs) Handles ButtonTasksRemove.Click
@@ -1068,7 +1071,7 @@ Public Class F
     End Sub
 
     Private Sub ButtonOpenLastFile_Click(sender As Object, e As EventArgs) Handles ButtonOpenLastFile.Click
-        RunCommandCom("start explorer ", LabelLastFileName.Text, False, False)
+        RunCommandCom("start explorer ", LabelLastFileName.Text, False, False, True)
     End Sub
 
     Private Sub ButtonTasksOneByOne_Click(sender As Object, e As EventArgs) Handles ButtonTasksOneByOne.Click
@@ -1097,7 +1100,7 @@ Public Class F
 
         Generate_Batch(command_file_address, list_of_tasks)
 
-        RunCommandCom(command_file_address, "", False, False)
+        RunCommandCom(command_file_address, "", False, False, True)
         ListBox1.Items.Clear()
 
     End Sub
@@ -1332,7 +1335,7 @@ Public Class F
             Generate_Batch_video(command_file_address, list_of_tasks)
         End If
 
-        RunCommandCom(command_file_address, "", False, False)
+        RunCommandCom(command_file_address, "", False, False, Not CheckBoxNoWindowForVideo.Checked)
 
     End Sub
 
@@ -1380,7 +1383,7 @@ Public Class F
         file.WriteLine(TextBoxLastCommandLine.Text)
         file.Close()
 
-        RunCommandCom(command_file_address, "", True, False)
+        RunCommandCom(command_file_address, "", True, False, True)
 
     End Sub
 

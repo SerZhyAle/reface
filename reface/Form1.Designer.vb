@@ -81,6 +81,7 @@ Partial Class F
         ButtonTasksRemove = New Button()
         ListBox1 = New ListBox()
         PageSettings = New TabPage()
+        CheckBoxNoWindowForVideo = New CheckBox()
         ButtonRunThisCommand = New Button()
         TextBoxLastCommandLine = New TextBox()
         CheckBoxNoWindow = New CheckBox()
@@ -110,6 +111,7 @@ Partial Class F
         LabelLastFileName = New Label()
         ButtonOpenLastFile = New Button()
         Button1 = New Button()
+        CheckBoxForAllFaces = New CheckBox()
         TabsBlock.SuspendLayout()
         PageTask.SuspendLayout()
         CType(PictureBoxFace, ComponentModel.ISupportInitialize).BeginInit()
@@ -131,7 +133,7 @@ Partial Class F
         TabsBlock.Controls.Add(PageTasks)
         TabsBlock.Controls.Add(PageSettings)
         TabsBlock.Controls.Add(TabResult)
-        TabsBlock.Font = New Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point)
+        TabsBlock.Font = New Font("Segoe UI", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
         TabsBlock.Location = New Point(4, 5)
         TabsBlock.Margin = New Padding(4, 5, 4, 5)
         TabsBlock.Name = "TabsBlock"
@@ -154,7 +156,7 @@ Partial Class F
         PageTask.Controls.Add(LabelFace)
         PageTask.Controls.Add(TextFace)
         PageTask.Controls.Add(TabControlSource)
-        PageTask.Font = New Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point)
+        PageTask.Font = New Font("Segoe UI", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
         PageTask.Location = New Point(4, 22)
         PageTask.Margin = New Padding(4, 5, 4, 5)
         PageTask.Name = "PageTask"
@@ -316,6 +318,7 @@ Partial Class F
         ' TabPageSourceImage
         ' 
         TabPageSourceImage.BackColor = Color.Linen
+        TabPageSourceImage.Controls.Add(CheckBoxForAllFaces)
         TabPageSourceImage.Controls.Add(Button3)
         TabPageSourceImage.Controls.Add(ButtonDeleteSourceImage)
         TabPageSourceImage.Controls.Add(ButtonRotate)
@@ -821,6 +824,7 @@ Partial Class F
         ' 
         PageSettings.BackColor = Color.Gainsboro
         PageSettings.BorderStyle = BorderStyle.FixedSingle
+        PageSettings.Controls.Add(CheckBoxNoWindowForVideo)
         PageSettings.Controls.Add(ButtonRunThisCommand)
         PageSettings.Controls.Add(TextBoxLastCommandLine)
         PageSettings.Controls.Add(CheckBoxNoWindow)
@@ -843,6 +847,16 @@ Partial Class F
         PageSettings.Size = New Size(772, 494)
         PageSettings.TabIndex = 2
         PageSettings.Text = "RUN Settings"
+        ' 
+        ' CheckBoxNoWindowForVideo
+        ' 
+        CheckBoxNoWindowForVideo.AutoSize = True
+        CheckBoxNoWindowForVideo.Location = New Point(216, 120)
+        CheckBoxNoWindowForVideo.Name = "CheckBoxNoWindowForVideo"
+        CheckBoxNoWindowForVideo.Size = New Size(139, 17)
+        CheckBoxNoWindowForVideo.TabIndex = 15
+        CheckBoxNoWindowForVideo.Text = "No Window for Video"
+        CheckBoxNoWindowForVideo.UseVisualStyleBackColor = True
         ' 
         ' ButtonRunThisCommand
         ' 
@@ -867,11 +881,11 @@ Partial Class F
         ' CheckBoxNoWindow
         ' 
         CheckBoxNoWindow.AutoSize = True
-        CheckBoxNoWindow.Location = New Point(200, 100)
+        CheckBoxNoWindow.Location = New Point(216, 100)
         CheckBoxNoWindow.Name = "CheckBoxNoWindow"
-        CheckBoxNoWindow.Size = New Size(88, 17)
+        CheckBoxNoWindow.Size = New Size(140, 17)
         CheckBoxNoWindow.TabIndex = 12
-        CheckBoxNoWindow.Text = "No Window"
+        CheckBoxNoWindow.Text = "No Window for Image"
         CheckBoxNoWindow.UseVisualStyleBackColor = True
         ' 
         ' CheckBox512
@@ -887,7 +901,7 @@ Partial Class F
         ' CheckBoxRunMinimized
         ' 
         CheckBoxRunMinimized.AutoSize = True
-        CheckBoxRunMinimized.Location = New Point(288, 100)
+        CheckBoxRunMinimized.Location = New Point(112, 120)
         CheckBoxRunMinimized.Name = "CheckBoxRunMinimized"
         CheckBoxRunMinimized.Size = New Size(103, 17)
         CheckBoxRunMinimized.TabIndex = 10
@@ -1006,6 +1020,7 @@ Partial Class F
         ' 
         ' Button2
         ' 
+        Button2.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         Button2.Font = New Font("Segoe UI", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
         Button2.Location = New Point(704, 0)
         Button2.Name = "Button2"
@@ -1016,6 +1031,7 @@ Partial Class F
         ' 
         ' ButtonDelResult
         ' 
+        ButtonDelResult.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         ButtonDelResult.Font = New Font("Segoe UI", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
         ButtonDelResult.Location = New Point(628, 0)
         ButtonDelResult.Name = "ButtonDelResult"
@@ -1026,6 +1042,7 @@ Partial Class F
         ' 
         ' ButtonResult
         ' 
+        ButtonResult.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         ButtonResult.Font = New Font("Segoe UI", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
         ButtonResult.Location = New Point(588, 0)
         ButtonResult.Name = "ButtonResult"
@@ -1048,6 +1065,7 @@ Partial Class F
         ' 
         ' TextBoxResult
         ' 
+        TextBoxResult.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         TextBoxResult.Font = New Font("Segoe UI", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
         TextBoxResult.Location = New Point(4, 5)
         TextBoxResult.Name = "TextBoxResult"
@@ -1111,7 +1129,7 @@ Partial Class F
         ' ButtonOpenLastFile
         ' 
         ButtonOpenLastFile.Anchor = AnchorStyles.Bottom Or AnchorStyles.Right
-        ButtonOpenLastFile.Font = New Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point)
+        ButtonOpenLastFile.Font = New Font("Segoe UI", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
         ButtonOpenLastFile.Location = New Point(552, 525)
         ButtonOpenLastFile.Margin = New Padding(4, 5, 4, 5)
         ButtonOpenLastFile.Name = "ButtonOpenLastFile"
@@ -1129,6 +1147,18 @@ Partial Class F
         Button1.TabIndex = 7
         Button1.Text = "~"
         Button1.UseVisualStyleBackColor = True
+        ' 
+        ' CheckBoxForAllFaces
+        ' 
+        CheckBoxForAllFaces.AutoSize = True
+        CheckBoxForAllFaces.Font = New Font("Segoe UI", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
+        CheckBoxForAllFaces.Location = New Point(308, 50)
+        CheckBoxForAllFaces.Margin = New Padding(4, 5, 4, 5)
+        CheckBoxForAllFaces.Name = "CheckBoxForAllFaces"
+        CheckBoxForAllFaces.Size = New Size(68, 17)
+        CheckBoxForAllFaces.TabIndex = 27
+        CheckBoxForAllFaces.Text = "All faces"
+        CheckBoxForAllFaces.UseVisualStyleBackColor = True
         ' 
         ' F
         ' 
@@ -1258,4 +1288,6 @@ Partial Class F
     Friend WithEvents ButtonRunThisCommand As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button1 As Button
+    Friend WithEvents CheckBoxNoWindowForVideo As CheckBox
+    Friend WithEvents CheckBoxForAllFaces As CheckBox
 End Class

@@ -3,7 +3,7 @@ Author: Naiyuan liu
 Github: https://github.com/NNNNAI
 Date: 2021-11-23 17:03:58
 LastEditors: Naiyuan liu
-LastEditTime: 2021-11-24 19:19:43
+LastEditTime: 2021-11-24 19:19:26
 Description: 
 '''
 
@@ -21,7 +21,7 @@ from datetime import datetime
 from models.projected_model import fsModel
 
 from options.test_options import TestOptions
-from insightface_func.face_detect_crop_single import Face_detect_crop
+from insightface_func.face_detect_crop_multi import Face_detect_crop
 from util.reverse2original import reverse2wholeimage
 import os
 from util.add_watermark import watermark_image
@@ -42,7 +42,7 @@ def _totensor(array):
     tensor = torch.from_numpy(array)
     img = tensor.transpose(0, 1).transpose(0, 2).contiguous()
     return img.float().div(255)
-    
+
 if __name__ == '__main__':
     opt = TestOptions().parse()
 
@@ -74,9 +74,9 @@ if __name__ == '__main__':
     else:            
         model = create_model(opt)
         model.eval()
-
+        
     spNorm =SpecificNorm()
-    
+
     app = Face_detect_crop(name='antelope', root='./insightface_func/models')
     app.prepare(ctx_id= 0, det_thresh=0.6, det_size=(640,640),mode=mode)
 
@@ -87,7 +87,7 @@ if __name__ == '__main__':
         img_a_align_crop, _ = app.get(img_a_whole,crop_size)
         img_a_align_crop_pil = Image.fromarray(cv2.cvtColor(img_a_align_crop[0],cv2.COLOR_BGR2RGB)) 
         img_a = transformer_Arcface(img_a_align_crop_pil)
-         
+        
         img_id = img_a.view(-1, img_a.shape[0], img_a.shape[1], img_a.shape[2])
 
         # convert numpy to tensor
@@ -104,7 +104,7 @@ if __name__ == '__main__':
         img_b_align_crop_list, b_mat_list = app.get(img_b_whole,crop_size)
         # detect_results = None
         swap_result_list = []
-
+        
         b_align_crop_tenor_list = []
 
         for b_align_crop in img_b_align_crop_list:
@@ -128,10 +128,10 @@ if __name__ == '__main__':
             net.eval()
         else:
             net =None
-            
+
         reverse2wholeimage(b_align_crop_tenor_list, swap_result_list, b_mat_list, crop_size, img_b_whole, logoclass, \
             os.path.join(opt.output_path, opt.cluster_path), opt.no_simswaplogo,pasring_model =net,use_mask=opt.use_mask, norm = spNorm)
-
+            
         print(' ')
 
         print('************ Done ! ************')

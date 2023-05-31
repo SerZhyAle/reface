@@ -10,6 +10,7 @@ Description:
 import cv2
 import torch
 import fractions
+import glob
 import time
 import numpy as np
 from PIL import Image
@@ -26,10 +27,11 @@ from util.reverse2original import reverse2wholeimage
 import os
 from util.add_watermark import watermark_image
 from util.norm import SpecificNorm
-from util.swap_new_model import swap_result_new_model
 from parsing_model.model import BiSeNet
 import warnings
 warnings.filterwarnings("ignore")
+
+from util.swap_new_model import swap_result_new_model
 
 def lcm(a, b): return abs(a * b) / fractions.gcd(a, b) if a and b else 0
 
@@ -42,7 +44,6 @@ def _totensor(array):
     tensor = torch.from_numpy(array)
     img = tensor.transpose(0, 1).transpose(0, 2).contiguous()
     return img.float().div(255)
-    
 if __name__ == '__main__':
     opt = TestOptions().parse()
 
@@ -76,18 +77,23 @@ if __name__ == '__main__':
         model.eval()
 
     spNorm =SpecificNorm()
-    
     app = Face_detect_crop(name='antelope', root='./insightface_func/models')
     app.prepare(ctx_id= 0, det_thresh=0.6, det_size=(640,640),mode=mode)
+    
+    path_f = os.path.join(opt.pic_b_path,'*.jp*')
+    path_f2 = os.path.join(opt.pic_b_path,'*.png')
+    path_f3 = os.path.join(opt.pic_b_path,'*.bmp')
+    path_f4 = os.path.join(opt.pic_b_path,'*.jfif')
+    path_f5 = os.path.join(opt.pic_b_path,'*.webp')
 
     with torch.no_grad():
+    
         pic_a = opt.pic_a_path
 
         img_a_whole = cv2.imread(pic_a)
         img_a_align_crop, _ = app.get(img_a_whole,crop_size)
         img_a_align_crop_pil = Image.fromarray(cv2.cvtColor(img_a_align_crop[0],cv2.COLOR_BGR2RGB)) 
         img_a = transformer_Arcface(img_a_align_crop_pil)
-         
         img_id = img_a.view(-1, img_a.shape[0], img_a.shape[1], img_a.shape[2])
 
         # convert numpy to tensor
@@ -97,27 +103,8 @@ if __name__ == '__main__':
         img_id_downsample = F.interpolate(img_id, size=(112,112))
         latend_id = model.netArc(img_id_downsample)
         latend_id = F.normalize(latend_id, p=2, dim=1)
-
-        pic_b = opt.pic_b_path
-        img_b_whole = cv2.imread(pic_b)
-
-        img_b_align_crop_list, b_mat_list = app.get(img_b_whole,crop_size)
-        # detect_results = None
-        swap_result_list = []
-
-        b_align_crop_tenor_list = []
-
-        for b_align_crop in img_b_align_crop_list:
-
-            b_align_crop_tenor = _totensor(cv2.cvtColor(b_align_crop,cv2.COLOR_BGR2RGB))[None,...].cuda()
-
-            if opt.new_model == True:
-              swap_result = swap_result_new_model(b_align_crop_tenor, model, latend_id)
-            else:
-              swap_result = model(None, b_align_crop_tenor, latend_id, None, True)[0]
-
-            swap_result_list.append(swap_result)
-            b_align_crop_tenor_list.append(b_align_crop_tenor)
+        
+        listc = 0
 
         if opt.use_mask:
             n_classes = 19
@@ -128,10 +115,50 @@ if __name__ == '__main__':
             net.eval()
         else:
             net =None
-            
-        reverse2wholeimage(b_align_crop_tenor_list, swap_result_list, b_mat_list, crop_size, img_b_whole, logoclass, \
-            os.path.join(opt.output_path, opt.cluster_path), opt.no_simswaplogo,pasring_model =net,use_mask=opt.use_mask, norm = spNorm)
+#
+        projectFiles = list(glob.glob(path_f) + glob.glob(path_f2) + glob.glob(path_f3) + glob.glob(path_f4)+ glob.glob(path_f5))
+        for frame_index in projectFiles:
+     
+            ############## Forward Pass ######################
 
-        print(' ')
+            pic_b = frame_index
+            img_b_whole = cv2.imread(pic_b)
 
-        print('************ Done ! ************')
+            try:
+                detect_results = app.get(img_b_whole,crop_size)
+
+                if detect_results is not None:
+                    
+                    img_b_align_crop_list =detect_results[0]
+                    b_mat_list = detect_results[1]
+                    
+                    # detect_results = None
+                    swap_result_list = []
+
+                    b_align_crop_tenor_list = []
+
+                    for b_align_crop in img_b_align_crop_list:
+
+                        b_align_crop_tenor = _totensor(cv2.cvtColor(b_align_crop,cv2.COLOR_BGR2RGB))[None,...].cuda()
+
+                        if opt.new_model == True:
+                          swap_result = swap_result_new_model(b_align_crop_tenor, model, latend_id)
+                        else:
+                          swap_result = model(None, b_align_crop_tenor, latend_id, None, True)[0]
+
+                        swap_result_list.append(swap_result)
+                        b_align_crop_tenor_list.append(b_align_crop_tenor)
+                        
+                    now = datetime.now()
+                    newname =opt.cluster_path + now.strftime("%Y%m%d%H%M%S%f")+'.png'            
+                    reverse2wholeimage(b_align_crop_tenor_list, swap_result_list, b_mat_list, crop_size, img_b_whole, logoclass, \
+                        os.path.join(opt.output_path, newname), opt.no_simswaplogo,pasring_model =net,use_mask=opt.use_mask, norm = spNorm)
+
+                    print(' ' + frame_index + ' -> ' + newname)
+                    listc = listc+1
+                else:
+                    print(' ' + frame_index + ' Skiped! ')
+            except:
+                print(' '+ frame_index + ' error! ')
+
+        print('* Done:' + opt.pic_b_path + ' - ' + str(listc))

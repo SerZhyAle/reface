@@ -50,6 +50,7 @@ if __name__ == '__main__':
     crop_size = opt.crop_size
 
     torch.nn.Module.dump_patches = True
+    '''
     if crop_size == 512:
       if opt.new_model == True:
           opt.name = '512_new'
@@ -65,15 +66,24 @@ if __name__ == '__main__':
     if crop_size == 224:
       if opt.name == 'people':
           opt.new_model = False
-
+    '''
+    if crop_size == 512:
+        opt.which_epoch = 550000
+        opt.name = '512'
+        mode = 'ffhq'
+    else:
+        mode = 'None'
+     
     logoclass = watermark_image('./simswaplogo/simswaplogo.png')
+    '''
     if opt.new_model == True:
         model = fsModel()
         model.initialize(opt)
         model.netG.eval()
     else:            
-        model = create_model(opt)
-        model.eval()
+    '''
+    model = create_model(opt)
+    model.eval()
         
     spNorm =SpecificNorm()
 
@@ -111,10 +121,10 @@ if __name__ == '__main__':
 
             b_align_crop_tenor = _totensor(cv2.cvtColor(b_align_crop,cv2.COLOR_BGR2RGB))[None,...].cuda()
 
-            if opt.new_model == True:
-              swap_result = swap_result_new_model(b_align_crop_tenor, model, latend_id)
-            else:
-              swap_result = model(None, b_align_crop_tenor, latend_id, None, True)[0]
+            #if opt.new_model == True:
+            #  swap_result = swap_result_new_model(b_align_crop_tenor, model, latend_id)
+            #else:
+            swap_result = model(None, b_align_crop_tenor, latend_id, None, True)[0]
 
             swap_result_list.append(swap_result)
             b_align_crop_tenor_list.append(b_align_crop_tenor)

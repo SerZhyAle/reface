@@ -46,6 +46,7 @@ if __name__ == '__main__':
     crop_size = opt.crop_size
 
     torch.nn.Module.dump_patches = True
+    '''
     if crop_size == 512:
       if opt.new_model == True:
           opt.name = '512_new'
@@ -61,14 +62,24 @@ if __name__ == '__main__':
     if crop_size == 224:
       if opt.name == 'people':
           opt.new_model = False
-
+    '''
+    if crop_size == 512:
+        opt.which_epoch = 550000
+        opt.name = '512'
+        mode = 'ffhq'
+    else:
+        mode = 'None'
+     
+    logoclass = watermark_image('./simswaplogo/simswaplogo.png')
+    '''
     if opt.new_model == True:
         model = fsModel()
         model.initialize(opt)
         model.netG.eval()
     else:            
-        model = create_model(opt)
-        model.eval()
+    '''
+    model = create_model(opt)
+    model.eval()
 
     app = Face_detect_crop(name='antelope', root='./insightface_func/models')
     app.prepare(ctx_id= 0, det_thresh=0.6, det_size=(640,640),mode=mode)

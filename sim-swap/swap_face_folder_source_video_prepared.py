@@ -72,14 +72,6 @@ if __name__ == '__main__':
     else:
         mode = 'None'
      
-    logoclass = watermark_image('./simswaplogo/simswaplogo.png')
-    '''
-    if opt.new_model == True:
-        model = fsModel()
-        model.initialize(opt)
-        model.netG.eval()
-    else:            
-    '''
     model = create_model(opt)
     model.eval()
 
@@ -112,7 +104,7 @@ if __name__ == '__main__':
         for frame_index in list(glob(path_f) + glob(path_f2) + glob(path_f3) + glob(path_f4)+ glob(path_f5)):
 
             video_swap(frame_index, latend_id, model, app, opt.output_path + '/' +opt.cluster_path , temp_results_dir=opt.temp_path, no_simswaplogo=opt.no_simswaplogo,
-                    use_mask=opt.use_mask, crop_size=crop_size, new_model=opt.new_model)
+                    use_mask=opt.use_mask, crop_size=crop_size)
             listc = listc+1
                     
         print('* Done:' + opt.pic_b_path + ' - ' + str(listc))

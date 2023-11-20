@@ -1,4 +1,5 @@
 ﻿Imports System.Drawing.Text
+Imports System.IO
 Imports System.Text
 Imports System.Threading
 
@@ -285,6 +286,7 @@ Public Class F
         CheckBoxNoWindow.Checked = GetSetting("SZA reFACE", "SET", "CheckBoxNoWindow") = "Y"
         CheckBoxNoWindowForVideo.Checked = GetSetting("SZA reFACE", "SET", "CheckBoxNoWindowForvideo") = "Y"
         CheckBoxForAllFaces.Checked = GetSetting("SZA reFACE", "SET", "CheckBoxForAllFaces") = "Y"
+        OriginalFileNameCheckBox.Checked = GetSetting("SZA reFACE", "SET", "OriginalFileNameCheckBox") = "Y"
 
         TextBoxName.Text = GetSetting("SZA reFACE", "SET", "TextBoxName")
         TextBoxSourceName.Text = GetSetting("SZA reFACE", "SET", "TextBoxSourceName")
@@ -328,6 +330,7 @@ Public Class F
 
         SaveSetting("SZA reFACE", "SET", "TextBoxName", TextBoxName.Text)
         SaveSetting("SZA reFACE", "SET", "TextBoxSourceName", TextBoxSourceName.Text)
+        SaveSetting("SZA reFACE", "SET", "OriginalFileNameCheckBox", If(OriginalFileNameCheckBox.Checked = True, "Y", "N"))
 
     End Sub
 
@@ -446,12 +449,15 @@ Public Class F
 
     Private Sub SelectSourceFolder()
 
-        Dim tryFile As New IO.FileInfo(TextBoxSourceImage.Text)
+        If Directory.Exists(TextBoxSourceImage.Text) Then
+            FolderBrowserDialog1.SelectedPath = TextBoxSourceImage.Text
+        Else
+            Dim tryFile As New IO.FileInfo(TextBoxSourceImage.Text)
+            FolderBrowserDialog1.SelectedPath = tryFile.DirectoryName
+        End If
 
-        FolderBrowserDialog1.SelectedPath = tryFile.DirectoryName
         FolderBrowserDialog1.Description = "Select the SOURCE Images Folder.."
         FolderBrowserDialog1.ShowNewFolderButton = False
-
         If (FolderBrowserDialog1.ShowDialog() = DialogResult.OK) Then
             TextBoxSourceImage.Text = FolderBrowserDialog1.SelectedPath
             CheckBoxSourceImagesFromFolder.Checked = True
@@ -703,7 +709,7 @@ Public Class F
             End If
 
             If ImagesFromFolder Then
-                Generate_Batch_for_source_folder(command_file_address)
+                Generate_Batch_for_source_folder(command_file_address, source_file)
             Else
                 Dim list_of_tasks(1, 3) As String
 
@@ -721,11 +727,10 @@ Public Class F
 
     End Sub
 
-    Private Sub Generate_Batch_for_source_folder(batch_name As String)
+    Private Sub Generate_Batch_for_source_folder(batch_name As String, source_file As String)
 
         Dim ResultName,
             face_file,
-            source_file,
             result_file_name,
                 result_file_address,
         clcl As String
@@ -752,18 +757,22 @@ Public Class F
 
         Dim thisisit As Integer = 0
 
-        Dim wasTextBoxSourceImage As String = TextBoxSourceImage.Text
+        If source_file = "" Then
+            source_file = TextBoxSourceImage.Text
+        End If
+
+        Dim wasTextBoxSourceImage As String = source_file
         Dim tryFile As New IO.FileInfo(wasTextBoxSourceImage)
         If tryFile.Exists Then
             TextBoxSourceImage.Text = tryFile.DirectoryName
+            source_file = tryFile.DirectoryName
         End If
 
-        Dim tryFolder As New IO.DirectoryInfo(TextBoxSourceImage.Text)
+        Dim tryFolder As New IO.DirectoryInfo(source_file)
         If tryFolder.Exists Then
 
             ResultName = TextBoxName.Text
             face_file = TextFace.Text
-            source_file = TextBoxSourceImage.Text
 
             result_file_name = ResultName + "_"
             result_file_address = TextBoxOutputFolder.Text + "\" + result_file_name
@@ -775,7 +784,9 @@ Public Class F
                        If(CheckBox512.Checked = True, " --crop_size 512 ", "") + " --pic_b_path " + Chr(34) +
             source_file + Chr(34) + " --output_path " + Chr(34) +
             TextBoxOutputFolder.Text + Chr(34) + " --cluster_path " +
-            Chr(34) + result_file_name + Chr(34) + " & "
+            Chr(34) + result_file_name + Chr(34) +
+            If(OriginalFileNameCheckBox.Checked, " --same_name 1 ", "") +
+            " & "
 
             LabelLast.Text = source_file
 
@@ -852,11 +863,10 @@ Public Class F
 
     End Sub
 
-    Private Sub Generate_Batch_for_source_folder_video(batch_name As String)
+    Private Sub Generate_Batch_for_source_folder_video(batch_name As String, source_file As String)
 
         Dim ResultName,
             face_file,
-            source_file,
             result_file_name,
                 result_file_address,
         clcl As String
@@ -883,20 +893,24 @@ Public Class F
 
         Dim thisisit As Integer = 0
 
-        Dim wasTextBoxSourceImage As String = TextBoxSourceImage.Text
+        If source_file = "" Then
+            source_file = TextBoxSourceImage.Text
+        End If
+
+        Dim wasTextBoxSourceImage As String = source_file
         Dim tryFile As New IO.FileInfo(wasTextBoxSourceImage)
         If tryFile.Exists Then
             TextBoxSourceImage.Text = tryFile.DirectoryName
+            source_file = tryFile.DirectoryName
         End If
 
-        Dim tryFolder As New IO.DirectoryInfo(TextBoxSourceImage.Text)
+        Dim tryFolder As New IO.DirectoryInfo(source_file)
         If tryFolder.Exists Then
 
             ResultName = TextBoxName.Text
             face_file = TextFace.Text
-            source_file = TextBoxSourceImage.Text
 
-            result_file_name = ResultName + ".mp4"
+            result_file_name = ResultName
             result_file_address = TextBoxOutputFolder.Text + "\" + result_file_name
 
             all_tasks = all_tasks +
@@ -1063,6 +1077,7 @@ Public Class F
             Else
                 ImagesFromFolder = False
             End If
+
             ExecuteImage(strArr(0), strArr(1), strArr(2), one_by_one, ImagesFromFolder)
 
         Next
@@ -1323,8 +1338,8 @@ Public Class F
 
         command_file_address = TextSimSwapFolder.Text + "\swap_face_" + RandomString(r) + ".bat"
 
-        If CheckBoxSourceImagesFromFolder.Checked Then
-            Generate_Batch_for_source_folder_video(command_file_address)
+        If CheckBoxSourceVideoFromFolder.Checked Then
+            Generate_Batch_for_source_folder_video(command_file_address, "")
         Else
             Dim list_of_tasks(1, 3) As String
 
@@ -1422,6 +1437,14 @@ Public Class F
     End Sub
 
     Private Sub TabPageSourceImage_Click(sender As Object, e As EventArgs) Handles TabPageSourceImage.Click
+
+    End Sub
+
+    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles OriginalFileNameCheckBox.CheckedChanged
+
+    End Sub
+
+    Private Sub CheckBoxForAllFaces_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBoxForAllFaces.CheckedChanged
 
     End Sub
 End Class

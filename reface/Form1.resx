@@ -1,4 +1,64 @@
-﻿<root>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema 
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing"">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
@@ -57,16 +117,2683 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="TabsBlock.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="PictureBoxFace.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="PictureBoxFace.Location" type="System.Drawing.Point, System.Drawing">
+    <value>624, 0</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="PictureBoxFace.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="PictureBoxFace.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 140</value>
+  </data>
+  <data name="PictureBoxFace.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="PictureBoxFace.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxFace.Name" xml:space="preserve">
+    <value>PictureBoxFace</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxFace.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxFace.Parent" xml:space="preserve">
+    <value>PageTask</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxFace.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ReFace.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="ReFace.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="ReFace.Location" type="System.Drawing.Point, System.Drawing">
+    <value>588, 5</value>
+  </data>
+  <data name="ReFace.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 30</value>
+  </data>
+  <data name="ReFace.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="ReFace.Text" xml:space="preserve">
+    <value>re</value>
+  </data>
+  <data name="&gt;&gt;ReFace.Name" xml:space="preserve">
+    <value>ReFace</value>
+  </data>
+  <data name="&gt;&gt;ReFace.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ReFace.Parent" xml:space="preserve">
+    <value>PageTask</value>
+  </data>
+  <data name="&gt;&gt;ReFace.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="CaptionName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CaptionName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 30</value>
+  </data>
+  <data name="CaptionName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 21</value>
+  </data>
+  <data name="CaptionName.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="CaptionName.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="&gt;&gt;CaptionName.Name" xml:space="preserve">
+    <value>CaptionName</value>
+  </data>
+  <data name="&gt;&gt;CaptionName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CaptionName.Parent" xml:space="preserve">
+    <value>PageTask</value>
+  </data>
+  <data name="&gt;&gt;CaptionName.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="TextBoxName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="TextBoxName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 30</value>
+  </data>
+  <data name="TextBoxName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>264, 29</value>
+  </data>
+  <data name="TextBoxName.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;TextBoxName.Name" xml:space="preserve">
+    <value>TextBoxName</value>
+  </data>
+  <data name="&gt;&gt;TextBoxName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TextBoxName.Parent" xml:space="preserve">
+    <value>PageTask</value>
+  </data>
+  <data name="&gt;&gt;TextBoxName.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="CheckBoxFaceHidden.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="CheckBoxFaceHidden.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CheckBoxFaceHidden.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="CheckBoxFaceHidden.Location" type="System.Drawing.Point, System.Drawing">
+    <value>555, 40</value>
+  </data>
+  <data name="CheckBoxFaceHidden.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="CheckBoxFaceHidden.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 25</value>
+  </data>
+  <data name="CheckBoxFaceHidden.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="CheckBoxFaceHidden.Text" xml:space="preserve">
+    <value>hide</value>
+  </data>
+  <data name="&gt;&gt;CheckBoxFaceHidden.Name" xml:space="preserve">
+    <value>CheckBoxFaceHidden</value>
+  </data>
+  <data name="&gt;&gt;CheckBoxFaceHidden.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBoxFaceHidden.Parent" xml:space="preserve">
+    <value>PageTask</value>
+  </data>
+  <data name="&gt;&gt;CheckBoxFaceHidden.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="LabelPrefix.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LabelPrefix.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="LabelPrefix.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 75</value>
+  </data>
+  <data name="LabelPrefix.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="LabelPrefix.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 21</value>
+  </data>
+  <data name="LabelPrefix.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="LabelPrefix.Text" xml:space="preserve">
+    <value>no file</value>
+  </data>
+  <data name="&gt;&gt;LabelPrefix.Name" xml:space="preserve">
+    <value>LabelPrefix</value>
+  </data>
+  <data name="&gt;&gt;LabelPrefix.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LabelPrefix.Parent" xml:space="preserve">
+    <value>PageTask</value>
+  </data>
+  <data name="&gt;&gt;LabelPrefix.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="PictureBoxFaceLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="PictureBoxFaceLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="PictureBoxFaceLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 55</value>
+  </data>
+  <data name="PictureBoxFaceLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="PictureBoxFaceLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 21</value>
+  </data>
+  <data name="PictureBoxFaceLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="PictureBoxFaceLabel.Text" xml:space="preserve">
+    <value>no file</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxFaceLabel.Name" xml:space="preserve">
+    <value>PictureBoxFaceLabel</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxFaceLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxFaceLabel.Parent" xml:space="preserve">
+    <value>PageTask</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxFaceLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="ButFaceFolder.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="ButFaceFolder.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ButFaceFolder.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="ButFaceFolder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>500, 40</value>
+  </data>
+  <data name="ButFaceFolder.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="ButFaceFolder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 30</value>
+  </data>
+  <data name="ButFaceFolder.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="ButFaceFolder.Text" xml:space="preserve">
+    <value>Folder..</value>
+  </data>
+  <data name="&gt;&gt;ButFaceFolder.Name" xml:space="preserve">
+    <value>ButFaceFolder</value>
+  </data>
+  <data name="&gt;&gt;ButFaceFolder.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButFaceFolder.Parent" xml:space="preserve">
+    <value>PageTask</value>
+  </data>
+  <data name="&gt;&gt;ButFaceFolder.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="CheckBoxFacesFromFolder.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CheckBoxFacesFromFolder.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="CheckBoxFacesFromFolder.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="CheckBoxFacesFromFolder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>320, 30</value>
+  </data>
+  <data name="CheckBoxFacesFromFolder.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="CheckBoxFacesFromFolder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>232, 25</value>
+  </data>
+  <data name="CheckBoxFacesFromFolder.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="CheckBoxFacesFromFolder.Text" xml:space="preserve">
+    <value>For all the Faces from Folder</value>
+  </data>
+  <data name="&gt;&gt;CheckBoxFacesFromFolder.Name" xml:space="preserve">
+    <value>CheckBoxFacesFromFolder</value>
+  </data>
+  <data name="&gt;&gt;CheckBoxFacesFromFolder.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBoxFacesFromFolder.Parent" xml:space="preserve">
+    <value>PageTask</value>
+  </data>
+  <data name="&gt;&gt;CheckBoxFacesFromFolder.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="ButtonFaceFile.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="ButtonFaceFile.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="ButtonFaceFile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>500, 5</value>
+  </data>
+  <data name="ButtonFaceFile.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="ButtonFaceFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 30</value>
+  </data>
+  <data name="ButtonFaceFile.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="ButtonFaceFile.Text" xml:space="preserve">
+    <value>File..</value>
+  </data>
+  <data name="&gt;&gt;ButtonFaceFile.Name" xml:space="preserve">
+    <value>ButtonFaceFile</value>
+  </data>
+  <data name="&gt;&gt;ButtonFaceFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonFaceFile.Parent" xml:space="preserve">
+    <value>PageTask</value>
+  </data>
+  <data name="&gt;&gt;ButtonFaceFile.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="LabelFace.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LabelFace.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 5</value>
+  </data>
+  <data name="LabelFace.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="LabelFace.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 21</value>
+  </data>
+  <data name="LabelFace.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="LabelFace.Text" xml:space="preserve">
+    <value>Face</value>
+  </data>
+  <data name="&gt;&gt;LabelFace.Name" xml:space="preserve">
+    <value>LabelFace</value>
+  </data>
+  <data name="&gt;&gt;LabelFace.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LabelFace.Parent" xml:space="preserve">
+    <value>PageTask</value>
+  </data>
+  <data name="&gt;&gt;LabelFace.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="TextFace.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="TextFace.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="TextFace.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 5</value>
+  </data>
+  <data name="TextFace.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="TextFace.Size" type="System.Drawing.Size, System.Drawing">
+    <value>444, 29</value>
+  </data>
+  <data name="TextFace.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;TextFace.Name" xml:space="preserve">
+    <value>TextFace</value>
+  </data>
+  <data name="&gt;&gt;TextFace.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TextFace.Parent" xml:space="preserve">
+    <value>PageTask</value>
+  </data>
+  <data name="&gt;&gt;TextFace.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="TabControlSource.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="CheckBoxForAllFaces.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CheckBoxForAllFaces.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="CheckBoxForAllFaces.Location" type="System.Drawing.Point, System.Drawing">
+    <value>308, 50</value>
+  </data>
+  <data name="CheckBoxForAllFaces.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="CheckBoxForAllFaces.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 25</value>
+  </data>
+  <data name="CheckBoxForAllFaces.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="CheckBoxForAllFaces.Text" xml:space="preserve">
+    <value>All faces</value>
+  </data>
+  <data name="&gt;&gt;CheckBoxForAllFaces.Name" xml:space="preserve">
+    <value>CheckBoxForAllFaces</value>
+  </data>
+  <data name="&gt;&gt;CheckBoxForAllFaces.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBoxForAllFaces.Parent" xml:space="preserve">
+    <value>TabPageSourceImage</value>
+  </data>
+  <data name="&gt;&gt;CheckBoxForAllFaces.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Button3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="Button3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="Button3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>700, 5</value>
+  </data>
+  <data name="Button3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 30</value>
+  </data>
+  <data name="Button3.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="Button3.Text" xml:space="preserve">
+    <value>out</value>
+  </data>
+  <data name="&gt;&gt;Button3.Name" xml:space="preserve">
+    <value>Button3</value>
+  </data>
+  <data name="&gt;&gt;Button3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button3.Parent" xml:space="preserve">
+    <value>TabPageSourceImage</value>
+  </data>
+  <data name="&gt;&gt;Button3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ButtonDeleteSourceImage.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="ButtonDeleteSourceImage.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="ButtonDeleteSourceImage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>636, 35</value>
+  </data>
+  <data name="ButtonDeleteSourceImage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 30</value>
+  </data>
+  <data name="ButtonDeleteSourceImage.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="ButtonDeleteSourceImage.Text" xml:space="preserve">
+    <value>del</value>
+  </data>
+  <data name="&gt;&gt;ButtonDeleteSourceImage.Name" xml:space="preserve">
+    <value>ButtonDeleteSourceImage</value>
+  </data>
+  <data name="&gt;&gt;ButtonDeleteSourceImage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonDeleteSourceImage.Parent" xml:space="preserve">
+    <value>TabPageSourceImage</value>
+  </data>
+  <data name="&gt;&gt;ButtonDeleteSourceImage.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ButtonRotate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="ButtonRotate.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="ButtonRotate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>728, 70</value>
+  </data>
+  <data name="ButtonRotate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="ButtonRotate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 30</value>
+  </data>
+  <data name="ButtonRotate.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="ButtonRotate.Text" xml:space="preserve">
+    <value>R</value>
+  </data>
+  <data name="&gt;&gt;ButtonRotate.Name" xml:space="preserve">
+    <value>ButtonRotate</value>
+  </data>
+  <data name="&gt;&gt;ButtonRotate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonRotate.Parent" xml:space="preserve">
+    <value>TabPageSourceImage</value>
+  </data>
+  <data name="&gt;&gt;ButtonRotate.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ButtonLoadPrev.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="ButtonLoadPrev.Location" type="System.Drawing.Point, System.Drawing">
+    <value>636, 70</value>
+  </data>
+  <data name="ButtonLoadPrev.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="ButtonLoadPrev.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 30</value>
+  </data>
+  <data name="ButtonLoadPrev.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="ButtonLoadPrev.Text" xml:space="preserve">
+    <value>&lt;</value>
+  </data>
+  <data name="&gt;&gt;ButtonLoadPrev.Name" xml:space="preserve">
+    <value>ButtonLoadPrev</value>
+  </data>
+  <data name="&gt;&gt;ButtonLoadPrev.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonLoadPrev.Parent" xml:space="preserve">
+    <value>TabPageSourceImage</value>
+  </data>
+  <data name="&gt;&gt;ButtonLoadPrev.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="ButtonLoadNext.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="ButtonLoadNext.Location" type="System.Drawing.Point, System.Drawing">
+    <value>672, 70</value>
+  </data>
+  <data name="ButtonLoadNext.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="ButtonLoadNext.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 30</value>
+  </data>
+  <data name="ButtonLoadNext.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="ButtonLoadNext.Text" xml:space="preserve">
+    <value>&gt;</value>
+  </data>
+  <data name="&gt;&gt;ButtonLoadNext.Name" xml:space="preserve">
+    <value>ButtonLoadNext</value>
+  </data>
+  <data name="&gt;&gt;ButtonLoadNext.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonLoadNext.Parent" xml:space="preserve">
+    <value>TabPageSourceImage</value>
+  </data>
+  <data name="&gt;&gt;ButtonLoadNext.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="ButtonNext.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="ButtonNext.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="ButtonNext.Location" type="System.Drawing.Point, System.Drawing">
+    <value>464, 70</value>
+  </data>
+  <data name="ButtonNext.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 30</value>
+  </data>
+  <data name="ButtonNext.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="ButtonNext.Text" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="&gt;&gt;ButtonNext.Name" xml:space="preserve">
+    <value>ButtonNext</value>
+  </data>
+  <data name="&gt;&gt;ButtonNext.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonNext.Parent" xml:space="preserve">
+    <value>TabPageSourceImage</value>
+  </data>
+  <data name="&gt;&gt;ButtonNext.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="ReSource.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="ReSource.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="ReSource.Location" type="System.Drawing.Point, System.Drawing">
+    <value>596, 5</value>
+  </data>
+  <data name="ReSource.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 30</value>
+  </data>
+  <data name="ReSource.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="ReSource.Text" xml:space="preserve">
+    <value>re</value>
+  </data>
+  <data name="&gt;&gt;ReSource.Name" xml:space="preserve">
+    <value>ReSource</value>
+  </data>
+  <data name="&gt;&gt;ReSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ReSource.Parent" xml:space="preserve">
+    <value>TabPageSourceImage</value>
+  </data>
+  <data name="&gt;&gt;ReSource.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="TextBoxSourceName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="TextBoxSourceName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>44, 30</value>
+  </data>
+  <data name="TextBoxSourceName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 29</value>
+  </data>
+  <data name="TextBoxSourceName.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;TextBoxSourceName.Name" xml:space="preserve">
+    <value>TextBoxSourceName</value>
+  </data>
+  <data name="&gt;&gt;TextBoxSourceName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TextBoxSourceName.Parent" xml:space="preserve">
+    <value>TabPageSourceImage</value>
+  </data>
+  <data name="&gt;&gt;TextBoxSourceName.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="LabelNameSource.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LabelNameSource.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 30</value>
+  </data>
+  <data name="LabelNameSource.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 21</value>
+  </data>
+  <data name="LabelNameSource.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="LabelNameSource.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="&gt;&gt;LabelNameSource.Name" xml:space="preserve">
+    <value>LabelNameSource</value>
+  </data>
+  <data name="&gt;&gt;LabelNameSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LabelNameSource.Parent" xml:space="preserve">
+    <value>TabPageSourceImage</value>
+  </data>
+  <data name="&gt;&gt;LabelNameSource.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="CheckBoxSourceHidden.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="CheckBoxSourceHidden.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CheckBoxSourceHidden.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="CheckBoxSourceHidden.Location" type="System.Drawing.Point, System.Drawing">
+    <value>691, 50</value>
+  </data>
+  <data name="CheckBoxSourceHidden.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="CheckBoxSourceHidden.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 25</value>
+  </data>
+  <data name="CheckBoxSourceHidden.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="CheckBoxSourceHidden.Text" xml:space="preserve">
+    <value>hide</value>
+  </data>
+  <data name="&gt;&gt;CheckBoxSourceHidden.Name" xml:space="preserve">
+    <value>CheckBoxSourceHidden</value>
+  </data>
+  <data name="&gt;&gt;CheckBoxSourceHidden.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBoxSourceHidden.Parent" xml:space="preserve">
+    <value>TabPageSourceImage</value>
+  </data>
+  <data name="&gt;&gt;CheckBoxSourceHidden.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="LabelSourceName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LabelSourceName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="LabelSourceName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 60</value>
+  </data>
+  <data name="LabelSourceName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="LabelSourceName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 21</value>
+  </data>
+  <data name="LabelSourceName.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="LabelSourceName.Text" xml:space="preserve">
+    <value>no file</value>
+  </data>
+  <data name="&gt;&gt;LabelSourceName.Name" xml:space="preserve">
+    <value>LabelSourceName</value>
+  </data>
+  <data name="&gt;&gt;LabelSourceName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LabelSourceName.Parent" xml:space="preserve">
+    <value>TabPageSourceImage</value>
+  </data>
+  <data name="&gt;&gt;LabelSourceName.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="PictureBoxSourceLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="PictureBoxSourceLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="PictureBoxSourceLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 80</value>
+  </data>
+  <data name="PictureBoxSourceLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="PictureBoxSourceLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 21</value>
+  </data>
+  <data name="PictureBoxSourceLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="PictureBoxSourceLabel.Text" xml:space="preserve">
+    <value>no file</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxSourceLabel.Name" xml:space="preserve">
+    <value>PictureBoxSourceLabel</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxSourceLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxSourceLabel.Parent" xml:space="preserve">
+    <value>TabPageSourceImage</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxSourceLabel.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="ButtonImageAddTask.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="ButtonImageAddTask.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="ButtonImageAddTask.Location" type="System.Drawing.Point, System.Drawing">
+    <value>368, 70</value>
+  </data>
+  <data name="ButtonImageAddTask.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="ButtonImageAddTask.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 30</value>
+  </data>
+  <data name="ButtonImageAddTask.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="ButtonImageAddTask.Text" xml:space="preserve">
+    <value>Add task</value>
+  </data>
+  <data name="&gt;&gt;ButtonImageAddTask.Name" xml:space="preserve">
+    <value>ButtonImageAddTask</value>
+  </data>
+  <data name="&gt;&gt;ButtonImageAddTask.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonImageAddTask.Parent" xml:space="preserve">
+    <value>TabPageSourceImage</value>
+  </data>
+  <data name="&gt;&gt;ButtonImageAddTask.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="ButtonSourceImageFolder.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="ButtonSourceImageFolder.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="ButtonSourceImageFolder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>488, 40</value>
+  </data>
+  <data name="ButtonSourceImageFolder.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="ButtonSourceImageFolder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 30</value>
+  </data>
+  <data name="ButtonSourceImageFolder.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="ButtonSourceImageFolder.Text" xml:space="preserve">
+    <value>Folder..</value>
+  </data>
+  <data name="&gt;&gt;ButtonSourceImageFolder.Name" xml:space="preserve">
+    <value>ButtonSourceImageFolder</value>
+  </data>
+  <data name="&gt;&gt;ButtonSourceImageFolder.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonSourceImageFolder.Parent" xml:space="preserve">
+    <value>TabPageSourceImage</value>
+  </data>
+  <data name="&gt;&gt;ButtonSourceImageFolder.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="ButtonImageStart.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="ButtonImageStart.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="ButtonImageStart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>552, 45</value>
+  </data>
+  <data name="ButtonImageStart.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="ButtonImageStart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 55</value>
+  </data>
+  <data name="ButtonImageStart.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="ButtonImageStart.Text" xml:space="preserve">
+    <value>START</value>
+  </data>
+  <data name="&gt;&gt;ButtonImageStart.Name" xml:space="preserve">
+    <value>ButtonImageStart</value>
+  </data>
+  <data name="&gt;&gt;ButtonImageStart.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonImageStart.Parent" xml:space="preserve">
+    <value>TabPageSourceImage</value>
+  </data>
+  <data name="&gt;&gt;ButtonImageStart.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="CheckBoxSourceImagesFromFolder.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CheckBoxSourceImagesFromFolder.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="CheckBoxSourceImagesFromFolder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>308, 30</value>
+  </data>
+  <data name="CheckBoxSourceImagesFromFolder.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="CheckBoxSourceImagesFromFolder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>245, 25</value>
+  </data>
+  <data name="CheckBoxSourceImagesFromFolder.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="CheckBoxSourceImagesFromFolder.Text" xml:space="preserve">
+    <value>For all the Images from Folder</value>
+  </data>
+  <data name="&gt;&gt;CheckBoxSourceImagesFromFolder.Name" xml:space="preserve">
+    <value>CheckBoxSourceImagesFromFolder</value>
+  </data>
+  <data name="&gt;&gt;CheckBoxSourceImagesFromFolder.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBoxSourceImagesFromFolder.Parent" xml:space="preserve">
+    <value>TabPageSourceImage</value>
+  </data>
+  <data name="&gt;&gt;CheckBoxSourceImagesFromFolder.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="ButtonSourceImageFile.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="ButtonSourceImageFile.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="ButtonSourceImageFile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>488, 5</value>
+  </data>
+  <data name="ButtonSourceImageFile.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="ButtonSourceImageFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 30</value>
+  </data>
+  <data name="ButtonSourceImageFile.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="ButtonSourceImageFile.Text" xml:space="preserve">
+    <value>File..</value>
+  </data>
+  <data name="&gt;&gt;ButtonSourceImageFile.Name" xml:space="preserve">
+    <value>ButtonSourceImageFile</value>
+  </data>
+  <data name="&gt;&gt;ButtonSourceImageFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonSourceImageFile.Parent" xml:space="preserve">
+    <value>TabPageSourceImage</value>
+  </data>
+  <data name="&gt;&gt;ButtonSourceImageFile.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="LabelSource.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LabelSource.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 5</value>
+  </data>
+  <data name="LabelSource.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="LabelSource.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 21</value>
+  </data>
+  <data name="LabelSource.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="LabelSource.Text" xml:space="preserve">
+    <value>Image</value>
+  </data>
+  <data name="&gt;&gt;LabelSource.Name" xml:space="preserve">
+    <value>LabelSource</value>
+  </data>
+  <data name="&gt;&gt;LabelSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LabelSource.Parent" xml:space="preserve">
+    <value>TabPageSourceImage</value>
+  </data>
+  <data name="&gt;&gt;LabelSource.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="TextBoxSourceImage.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="TextBoxSourceImage.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="TextBoxSourceImage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>44, 5</value>
+  </data>
+  <data name="TextBoxSourceImage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="TextBoxSourceImage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>436, 29</value>
+  </data>
+  <data name="TextBoxSourceImage.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;TextBoxSourceImage.Name" xml:space="preserve">
+    <value>TextBoxSourceImage</value>
+  </data>
+  <data name="&gt;&gt;TextBoxSourceImage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TextBoxSourceImage.Parent" xml:space="preserve">
+    <value>TabPageSourceImage</value>
+  </data>
+  <data name="&gt;&gt;TextBoxSourceImage.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="PictureBoxSourceImage.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="PictureBoxSourceImage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 110</value>
+  </data>
+  <data name="PictureBoxSourceImage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="PictureBoxSourceImage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>756, 209</value>
+  </data>
+  <data name="PictureBoxSourceImage.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="PictureBoxSourceImage.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxSourceImage.Name" xml:space="preserve">
+    <value>PictureBoxSourceImage</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxSourceImage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxSourceImage.Parent" xml:space="preserve">
+    <value>TabPageSourceImage</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxSourceImage.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="TabPageSourceImage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 30</value>
+  </data>
+  <data name="TabPageSourceImage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="TabPageSourceImage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="TabPageSourceImage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>764, 323</value>
+  </data>
+  <data name="TabPageSourceImage.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="TabPageSourceImage.Text" xml:space="preserve">
+    <value>Source from IMAGE</value>
+  </data>
+  <data name="&gt;&gt;TabPageSourceImage.Name" xml:space="preserve">
+    <value>TabPageSourceImage</value>
+  </data>
+  <data name="&gt;&gt;TabPageSourceImage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TabPageSourceImage.Parent" xml:space="preserve">
+    <value>TabControlSource</value>
+  </data>
+  <data name="&gt;&gt;TabPageSourceImage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="TextBoxNameSourceVideo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="TextBoxNameSourceVideo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="TextBoxNameSourceVideo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 5</value>
+  </data>
+  <data name="TextBoxNameSourceVideo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>436, 29</value>
+  </data>
+  <data name="TextBoxNameSourceVideo.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;TextBoxNameSourceVideo.Name" xml:space="preserve">
+    <value>TextBoxNameSourceVideo</value>
+  </data>
+  <data name="&gt;&gt;TextBoxNameSourceVideo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TextBoxNameSourceVideo.Parent" xml:space="preserve">
+    <value>TabPageSourceVideo</value>
+  </data>
+  <data name="&gt;&gt;TextBoxNameSourceVideo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 30</value>
+  </data>
+  <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 21</value>
+  </data>
+  <data name="Label1.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="Label1.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="&gt;&gt;Label1.Name" xml:space="preserve">
+    <value>Label1</value>
+  </data>
+  <data name="&gt;&gt;Label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label1.Parent" xml:space="preserve">
+    <value>TabPageSourceVideo</value>
+  </data>
+  <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="PictureBoxVideo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="PictureBoxVideo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 80</value>
+  </data>
+  <data name="PictureBoxVideo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>752, 247</value>
+  </data>
+  <data name="PictureBoxVideo.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxVideo.Name" xml:space="preserve">
+    <value>PictureBoxVideo</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxVideo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxVideo.Parent" xml:space="preserve">
+    <value>TabPageSourceVideo</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxVideo.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="PictureBoxSourceVideoLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="PictureBoxSourceVideoLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="PictureBoxSourceVideoLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 50</value>
+  </data>
+  <data name="PictureBoxSourceVideoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="PictureBoxSourceVideoLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 21</value>
+  </data>
+  <data name="PictureBoxSourceVideoLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="PictureBoxSourceVideoLabel.Text" xml:space="preserve">
+    <value>no file</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxSourceVideoLabel.Name" xml:space="preserve">
+    <value>PictureBoxSourceVideoLabel</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxSourceVideoLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxSourceVideoLabel.Parent" xml:space="preserve">
+    <value>TabPageSourceVideo</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxSourceVideoLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="LabelSourceVideoName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LabelSourceVideoName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="LabelSourceVideoName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 65</value>
+  </data>
+  <data name="LabelSourceVideoName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="LabelSourceVideoName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 21</value>
+  </data>
+  <data name="LabelSourceVideoName.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="LabelSourceVideoName.Text" xml:space="preserve">
+    <value>no file</value>
+  </data>
+  <data name="&gt;&gt;LabelSourceVideoName.Name" xml:space="preserve">
+    <value>LabelSourceVideoName</value>
+  </data>
+  <data name="&gt;&gt;LabelSourceVideoName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LabelSourceVideoName.Parent" xml:space="preserve">
+    <value>TabPageSourceVideo</value>
+  </data>
+  <data name="&gt;&gt;LabelSourceVideoName.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="ButtonSourceVideoPlay.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="ButtonSourceVideoPlay.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="ButtonSourceVideoPlay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>700, 5</value>
+  </data>
+  <data name="ButtonSourceVideoPlay.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="ButtonSourceVideoPlay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 30</value>
+  </data>
+  <data name="ButtonSourceVideoPlay.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="ButtonSourceVideoPlay.Text" xml:space="preserve">
+    <value>Play..</value>
+  </data>
+  <data name="&gt;&gt;ButtonSourceVideoPlay.Name" xml:space="preserve">
+    <value>ButtonSourceVideoPlay</value>
+  </data>
+  <data name="&gt;&gt;ButtonSourceVideoPlay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonSourceVideoPlay.Parent" xml:space="preserve">
+    <value>TabPageSourceVideo</value>
+  </data>
+  <data name="&gt;&gt;ButtonSourceVideoPlay.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="ButtonSourceVideoFolder.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="ButtonSourceVideoFolder.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="ButtonSourceVideoFolder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>490, 35</value>
+  </data>
+  <data name="ButtonSourceVideoFolder.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="ButtonSourceVideoFolder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 30</value>
+  </data>
+  <data name="ButtonSourceVideoFolder.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="ButtonSourceVideoFolder.Text" xml:space="preserve">
+    <value>Folder..</value>
+  </data>
+  <data name="&gt;&gt;ButtonSourceVideoFolder.Name" xml:space="preserve">
+    <value>ButtonSourceVideoFolder</value>
+  </data>
+  <data name="&gt;&gt;ButtonSourceVideoFolder.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonSourceVideoFolder.Parent" xml:space="preserve">
+    <value>TabPageSourceVideo</value>
+  </data>
+  <data name="&gt;&gt;ButtonSourceVideoFolder.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="CheckBoxSourceVideoFromFolder.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="CheckBoxSourceVideoFromFolder.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CheckBoxSourceVideoFromFolder.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="CheckBoxSourceVideoFromFolder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>319, 30</value>
+  </data>
+  <data name="CheckBoxSourceVideoFromFolder.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="CheckBoxSourceVideoFromFolder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 25</value>
+  </data>
+  <data name="CheckBoxSourceVideoFromFolder.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="CheckBoxSourceVideoFromFolder.Text" xml:space="preserve">
+    <value>Videos from Folder</value>
+  </data>
+  <data name="&gt;&gt;CheckBoxSourceVideoFromFolder.Name" xml:space="preserve">
+    <value>CheckBoxSourceVideoFromFolder</value>
+  </data>
+  <data name="&gt;&gt;CheckBoxSourceVideoFromFolder.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBoxSourceVideoFromFolder.Parent" xml:space="preserve">
+    <value>TabPageSourceVideo</value>
+  </data>
+  <data name="&gt;&gt;CheckBoxSourceVideoFromFolder.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="ButtonSourceVideoFile.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="ButtonSourceVideoFile.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="ButtonSourceVideoFile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>490, 5</value>
+  </data>
+  <data name="ButtonSourceVideoFile.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="ButtonSourceVideoFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 30</value>
+  </data>
+  <data name="ButtonSourceVideoFile.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="ButtonSourceVideoFile.Text" xml:space="preserve">
+    <value>File..</value>
+  </data>
+  <data name="&gt;&gt;ButtonSourceVideoFile.Name" xml:space="preserve">
+    <value>ButtonSourceVideoFile</value>
+  </data>
+  <data name="&gt;&gt;ButtonSourceVideoFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonSourceVideoFile.Parent" xml:space="preserve">
+    <value>TabPageSourceVideo</value>
+  </data>
+  <data name="&gt;&gt;ButtonSourceVideoFile.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="ButtonVideoAddTask.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="ButtonVideoAddTask.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="ButtonVideoAddTask.Location" type="System.Drawing.Point, System.Drawing">
+    <value>700, 35</value>
+  </data>
+  <data name="ButtonVideoAddTask.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="ButtonVideoAddTask.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 30</value>
+  </data>
+  <data name="ButtonVideoAddTask.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="ButtonVideoAddTask.Text" xml:space="preserve">
+    <value>Add task</value>
+  </data>
+  <data name="&gt;&gt;ButtonVideoAddTask.Name" xml:space="preserve">
+    <value>ButtonVideoAddTask</value>
+  </data>
+  <data name="&gt;&gt;ButtonVideoAddTask.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonVideoAddTask.Parent" xml:space="preserve">
+    <value>TabPageSourceVideo</value>
+  </data>
+  <data name="&gt;&gt;ButtonVideoAddTask.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="ButtonVideoStart.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="ButtonVideoStart.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="ButtonVideoStart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>560, 5</value>
+  </data>
+  <data name="ButtonVideoStart.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="ButtonVideoStart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 60</value>
+  </data>
+  <data name="ButtonVideoStart.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="ButtonVideoStart.Text" xml:space="preserve">
+    <value>START</value>
+  </data>
+  <data name="&gt;&gt;ButtonVideoStart.Name" xml:space="preserve">
+    <value>ButtonVideoStart</value>
+  </data>
+  <data name="&gt;&gt;ButtonVideoStart.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonVideoStart.Parent" xml:space="preserve">
+    <value>TabPageSourceVideo</value>
+  </data>
+  <data name="&gt;&gt;ButtonVideoStart.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="LabelSourceVideo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LabelSourceVideo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 5</value>
+  </data>
+  <data name="LabelSourceVideo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="LabelSourceVideo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 21</value>
+  </data>
+  <data name="LabelSourceVideo.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="LabelSourceVideo.Text" xml:space="preserve">
+    <value>Video</value>
+  </data>
+  <data name="&gt;&gt;LabelSourceVideo.Name" xml:space="preserve">
+    <value>LabelSourceVideo</value>
+  </data>
+  <data name="&gt;&gt;LabelSourceVideo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LabelSourceVideo.Parent" xml:space="preserve">
+    <value>TabPageSourceVideo</value>
+  </data>
+  <data name="&gt;&gt;LabelSourceVideo.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="TextBoxSourceVideo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="TextBoxSourceVideo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 30</value>
+  </data>
+  <data name="TextBoxSourceVideo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="TextBoxSourceVideo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>240, 29</value>
+  </data>
+  <data name="TextBoxSourceVideo.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;TextBoxSourceVideo.Name" xml:space="preserve">
+    <value>TextBoxSourceVideo</value>
+  </data>
+  <data name="&gt;&gt;TextBoxSourceVideo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TextBoxSourceVideo.Parent" xml:space="preserve">
+    <value>TabPageSourceVideo</value>
+  </data>
+  <data name="&gt;&gt;TextBoxSourceVideo.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="TabPageSourceVideo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 30</value>
+  </data>
+  <data name="TabPageSourceVideo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="TabPageSourceVideo.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="TabPageSourceVideo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>764, 331</value>
+  </data>
+  <data name="TabPageSourceVideo.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="TabPageSourceVideo.Text" xml:space="preserve">
+    <value>Source from VIDEO</value>
+  </data>
+  <data name="&gt;&gt;TabPageSourceVideo.Name" xml:space="preserve">
+    <value>TabPageSourceVideo</value>
+  </data>
+  <data name="&gt;&gt;TabPageSourceVideo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TabPageSourceVideo.Parent" xml:space="preserve">
+    <value>TabControlSource</value>
+  </data>
+  <data name="&gt;&gt;TabPageSourceVideo.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="TabControlSource.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="TabControlSource.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 125</value>
+  </data>
+  <data name="TabControlSource.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="TabControlSource.Size" type="System.Drawing.Size, System.Drawing">
+    <value>772, 357</value>
+  </data>
+  <data name="TabControlSource.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;TabControlSource.Name" xml:space="preserve">
+    <value>TabControlSource</value>
+  </data>
+  <data name="&gt;&gt;TabControlSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TabControlSource.Parent" xml:space="preserve">
+    <value>PageTask</value>
+  </data>
+  <data name="&gt;&gt;TabControlSource.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="PageTask.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="PageTask.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 30</value>
+  </data>
+  <data name="PageTask.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="PageTask.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="PageTask.Size" type="System.Drawing.Size, System.Drawing">
+    <value>772, 486</value>
+  </data>
+  <data name="PageTask.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="PageTask.Text" xml:space="preserve">
+    <value>SIMSWAP Task</value>
+  </data>
+  <data name="&gt;&gt;PageTask.Name" xml:space="preserve">
+    <value>PageTask</value>
+  </data>
+  <data name="&gt;&gt;PageTask.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PageTask.Parent" xml:space="preserve">
+    <value>TabsBlock</value>
+  </data>
+  <data name="&gt;&gt;PageTask.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ButtonTasksOneBatch.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="ButtonTasksOneBatch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>612, 5</value>
+  </data>
+  <data name="ButtonTasksOneBatch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 30</value>
+  </data>
+  <data name="ButtonTasksOneBatch.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="ButtonTasksOneBatch.Text" xml:space="preserve">
+    <value>RUN Tasks as Batch</value>
+  </data>
+  <data name="&gt;&gt;ButtonTasksOneBatch.Name" xml:space="preserve">
+    <value>ButtonTasksOneBatch</value>
+  </data>
+  <data name="&gt;&gt;ButtonTasksOneBatch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonTasksOneBatch.Parent" xml:space="preserve">
+    <value>PageTasks</value>
+  </data>
+  <data name="&gt;&gt;ButtonTasksOneBatch.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ButtonTasksOneByOne.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="ButtonTasksOneByOne.Location" type="System.Drawing.Point, System.Drawing">
+    <value>460, 5</value>
+  </data>
+  <data name="ButtonTasksOneByOne.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 30</value>
+  </data>
+  <data name="ButtonTasksOneByOne.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="ButtonTasksOneByOne.Text" xml:space="preserve">
+    <value>RUN one-by-one Tasks</value>
+  </data>
+  <data name="&gt;&gt;ButtonTasksOneByOne.Name" xml:space="preserve">
+    <value>ButtonTasksOneByOne</value>
+  </data>
+  <data name="&gt;&gt;ButtonTasksOneByOne.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonTasksOneByOne.Parent" xml:space="preserve">
+    <value>PageTasks</value>
+  </data>
+  <data name="&gt;&gt;ButtonTasksOneByOne.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ButtonTasksRun.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="ButtonTasksRun.Location" type="System.Drawing.Point, System.Drawing">
+    <value>312, 5</value>
+  </data>
+  <data name="ButtonTasksRun.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 30</value>
+  </data>
+  <data name="ButtonTasksRun.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="ButtonTasksRun.Text" xml:space="preserve">
+    <value>RUN all Tasks</value>
+  </data>
+  <data name="&gt;&gt;ButtonTasksRun.Name" xml:space="preserve">
+    <value>ButtonTasksRun</value>
+  </data>
+  <data name="&gt;&gt;ButtonTasksRun.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonTasksRun.Parent" xml:space="preserve">
+    <value>PageTasks</value>
+  </data>
+  <data name="&gt;&gt;ButtonTasksRun.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ButtonTasksClear.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="ButtonTasksClear.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 5</value>
+  </data>
+  <data name="ButtonTasksClear.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 30</value>
+  </data>
+  <data name="ButtonTasksClear.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="ButtonTasksClear.Text" xml:space="preserve">
+    <value>Clear list</value>
+  </data>
+  <data name="&gt;&gt;ButtonTasksClear.Name" xml:space="preserve">
+    <value>ButtonTasksClear</value>
+  </data>
+  <data name="&gt;&gt;ButtonTasksClear.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonTasksClear.Parent" xml:space="preserve">
+    <value>PageTasks</value>
+  </data>
+  <data name="&gt;&gt;ButtonTasksClear.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ButtonTasksRemove.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="ButtonTasksRemove.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 5</value>
+  </data>
+  <data name="ButtonTasksRemove.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 30</value>
+  </data>
+  <data name="ButtonTasksRemove.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="ButtonTasksRemove.Text" xml:space="preserve">
+    <value>Remove Selected</value>
+  </data>
+  <data name="&gt;&gt;ButtonTasksRemove.Name" xml:space="preserve">
+    <value>ButtonTasksRemove</value>
+  </data>
+  <data name="&gt;&gt;ButtonTasksRemove.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonTasksRemove.Parent" xml:space="preserve">
+    <value>PageTasks</value>
+  </data>
+  <data name="&gt;&gt;ButtonTasksRemove.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="ListBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="ListBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="ListBox1.HorizontalScrollbar" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ListBox1.ItemHeight" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="ListBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 56</value>
+  </data>
+  <data name="ListBox1.ScrollAlwaysVisible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ListBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>764, 319</value>
+  </data>
+  <data name="ListBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ListBox1.Name" xml:space="preserve">
+    <value>ListBox1</value>
+  </data>
+  <data name="&gt;&gt;ListBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ListBox1.Parent" xml:space="preserve">
+    <value>PageTasks</value>
+  </data>
+  <data name="&gt;&gt;ListBox1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="PageTasks.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 30</value>
+  </data>
+  <data name="PageTasks.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="PageTasks.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="PageTasks.Size" type="System.Drawing.Size, System.Drawing">
+    <value>772, 486</value>
+  </data>
+  <data name="PageTasks.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="PageTasks.Text" xml:space="preserve">
+    <value>List of tasks..</value>
+  </data>
+  <data name="&gt;&gt;PageTasks.Name" xml:space="preserve">
+    <value>PageTasks</value>
+  </data>
+  <data name="&gt;&gt;PageTasks.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PageTasks.Parent" xml:space="preserve">
+    <value>TabsBlock</value>
+  </data>
+  <data name="&gt;&gt;PageTasks.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="OriginalFileNameCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="OriginalFileNameCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>364, 100</value>
+  </data>
+  <data name="OriginalFileNameCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>234, 25</value>
+  </data>
+  <data name="OriginalFileNameCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="OriginalFileNameCheckBox.Text" xml:space="preserve">
+    <value>Original filename for images</value>
+  </data>
+  <data name="&gt;&gt;OriginalFileNameCheckBox.Name" xml:space="preserve">
+    <value>OriginalFileNameCheckBox</value>
+  </data>
+  <data name="&gt;&gt;OriginalFileNameCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OriginalFileNameCheckBox.Parent" xml:space="preserve">
+    <value>PageSettings</value>
+  </data>
+  <data name="&gt;&gt;OriginalFileNameCheckBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="CheckBoxNoWindowForVideo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CheckBoxNoWindowForVideo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>216, 120</value>
+  </data>
+  <data name="CheckBoxNoWindowForVideo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 25</value>
+  </data>
+  <data name="CheckBoxNoWindowForVideo.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="CheckBoxNoWindowForVideo.Text" xml:space="preserve">
+    <value>No Window for Video</value>
+  </data>
+  <data name="&gt;&gt;CheckBoxNoWindowForVideo.Name" xml:space="preserve">
+    <value>CheckBoxNoWindowForVideo</value>
+  </data>
+  <data name="&gt;&gt;CheckBoxNoWindowForVideo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBoxNoWindowForVideo.Parent" xml:space="preserve">
+    <value>PageSettings</value>
+  </data>
+  <data name="&gt;&gt;CheckBoxNoWindowForVideo.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ButtonRunThisCommand.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="ButtonRunThisCommand.Location" type="System.Drawing.Point, System.Drawing">
+    <value>656, 110</value>
+  </data>
+  <data name="ButtonRunThisCommand.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 30</value>
+  </data>
+  <data name="ButtonRunThisCommand.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="ButtonRunThisCommand.Text" xml:space="preserve">
+    <value>RUN</value>
+  </data>
+  <data name="&gt;&gt;ButtonRunThisCommand.Name" xml:space="preserve">
+    <value>ButtonRunThisCommand</value>
+  </data>
+  <data name="&gt;&gt;ButtonRunThisCommand.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonRunThisCommand.Parent" xml:space="preserve">
+    <value>PageSettings</value>
+  </data>
+  <data name="&gt;&gt;ButtonRunThisCommand.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="TextBoxLastCommandLine.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="TextBoxLastCommandLine.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="TextBoxLastCommandLine.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 145</value>
+  </data>
+  <data name="TextBoxLastCommandLine.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TextBoxLastCommandLine.Size" type="System.Drawing.Size, System.Drawing">
+    <value>756, 312</value>
+  </data>
+  <data name="TextBoxLastCommandLine.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;TextBoxLastCommandLine.Name" xml:space="preserve">
+    <value>TextBoxLastCommandLine</value>
+  </data>
+  <data name="&gt;&gt;TextBoxLastCommandLine.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TextBoxLastCommandLine.Parent" xml:space="preserve">
+    <value>PageSettings</value>
+  </data>
+  <data name="&gt;&gt;TextBoxLastCommandLine.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="CheckBoxNoWindow.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CheckBoxNoWindow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>216, 100</value>
+  </data>
+  <data name="CheckBoxNoWindow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 25</value>
+  </data>
+  <data name="CheckBoxNoWindow.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="CheckBoxNoWindow.Text" xml:space="preserve">
+    <value>No Window for Image</value>
+  </data>
+  <data name="&gt;&gt;CheckBoxNoWindow.Name" xml:space="preserve">
+    <value>CheckBoxNoWindow</value>
+  </data>
+  <data name="&gt;&gt;CheckBoxNoWindow.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBoxNoWindow.Parent" xml:space="preserve">
+    <value>PageSettings</value>
+  </data>
+  <data name="&gt;&gt;CheckBoxNoWindow.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="CheckBox512.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CheckBox512.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 100</value>
+  </data>
+  <data name="CheckBox512.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 25</value>
+  </data>
+  <data name="CheckBox512.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="CheckBox512.Text" xml:space="preserve">
+    <value>512</value>
+  </data>
+  <data name="&gt;&gt;CheckBox512.Name" xml:space="preserve">
+    <value>CheckBox512</value>
+  </data>
+  <data name="&gt;&gt;CheckBox512.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBox512.Parent" xml:space="preserve">
+    <value>PageSettings</value>
+  </data>
+  <data name="&gt;&gt;CheckBox512.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="CheckBoxRunMinimized.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CheckBoxRunMinimized.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 120</value>
+  </data>
+  <data name="CheckBoxRunMinimized.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 25</value>
+  </data>
+  <data name="CheckBoxRunMinimized.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="CheckBoxRunMinimized.Text" xml:space="preserve">
+    <value>Run Minimized</value>
+  </data>
+  <data name="&gt;&gt;CheckBoxRunMinimized.Name" xml:space="preserve">
+    <value>CheckBoxRunMinimized</value>
+  </data>
+  <data name="&gt;&gt;CheckBoxRunMinimized.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBoxRunMinimized.Parent" xml:space="preserve">
+    <value>PageSettings</value>
+  </data>
+  <data name="&gt;&gt;CheckBoxRunMinimized.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="ButtonOutputOpen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>692, 75</value>
+  </data>
+  <data name="ButtonOutputOpen.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="ButtonOutputOpen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 25</value>
+  </data>
+  <data name="ButtonOutputOpen.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="ButtonOutputOpen.Text" xml:space="preserve">
+    <value>open</value>
+  </data>
+  <data name="&gt;&gt;ButtonOutputOpen.Name" xml:space="preserve">
+    <value>ButtonOutputOpen</value>
+  </data>
+  <data name="&gt;&gt;ButtonOutputOpen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonOutputOpen.Parent" xml:space="preserve">
+    <value>PageSettings</value>
+  </data>
+  <data name="&gt;&gt;ButtonOutputOpen.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="ButtonOutputFolder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>656, 75</value>
+  </data>
+  <data name="ButtonOutputFolder.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="ButtonOutputFolder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 25</value>
+  </data>
+  <data name="ButtonOutputFolder.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="ButtonOutputFolder.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="&gt;&gt;ButtonOutputFolder.Name" xml:space="preserve">
+    <value>ButtonOutputFolder</value>
+  </data>
+  <data name="&gt;&gt;ButtonOutputFolder.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonOutputFolder.Parent" xml:space="preserve">
+    <value>PageSettings</value>
+  </data>
+  <data name="&gt;&gt;ButtonOutputFolder.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="LabelOutputFolder.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LabelOutputFolder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 80</value>
+  </data>
+  <data name="LabelOutputFolder.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="LabelOutputFolder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 21</value>
+  </data>
+  <data name="LabelOutputFolder.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="LabelOutputFolder.Text" xml:space="preserve">
+    <value>Output folder</value>
+  </data>
+  <data name="&gt;&gt;LabelOutputFolder.Name" xml:space="preserve">
+    <value>LabelOutputFolder</value>
+  </data>
+  <data name="&gt;&gt;LabelOutputFolder.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LabelOutputFolder.Parent" xml:space="preserve">
+    <value>PageSettings</value>
+  </data>
+  <data name="&gt;&gt;LabelOutputFolder.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="TextBoxOutputFolder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 75</value>
+  </data>
+  <data name="TextBoxOutputFolder.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="TextBoxOutputFolder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>528, 29</value>
+  </data>
+  <data name="TextBoxOutputFolder.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;TextBoxOutputFolder.Name" xml:space="preserve">
+    <value>TextBoxOutputFolder</value>
+  </data>
+  <data name="&gt;&gt;TextBoxOutputFolder.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TextBoxOutputFolder.Parent" xml:space="preserve">
+    <value>PageSettings</value>
+  </data>
+  <data name="&gt;&gt;TextBoxOutputFolder.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="ButtonSimSwapFolder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>656, 40</value>
+  </data>
+  <data name="ButtonSimSwapFolder.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="ButtonSimSwapFolder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 25</value>
+  </data>
+  <data name="ButtonSimSwapFolder.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="ButtonSimSwapFolder.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="&gt;&gt;ButtonSimSwapFolder.Name" xml:space="preserve">
+    <value>ButtonSimSwapFolder</value>
+  </data>
+  <data name="&gt;&gt;ButtonSimSwapFolder.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonSimSwapFolder.Parent" xml:space="preserve">
+    <value>PageSettings</value>
+  </data>
+  <data name="&gt;&gt;ButtonSimSwapFolder.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="LabelSimSwap.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LabelSimSwap.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 45</value>
+  </data>
+  <data name="LabelSimSwap.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="LabelSimSwap.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 21</value>
+  </data>
+  <data name="LabelSimSwap.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="LabelSimSwap.Text" xml:space="preserve">
+    <value>SimSwap folder</value>
+  </data>
+  <data name="&gt;&gt;LabelSimSwap.Name" xml:space="preserve">
+    <value>LabelSimSwap</value>
+  </data>
+  <data name="&gt;&gt;LabelSimSwap.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LabelSimSwap.Parent" xml:space="preserve">
+    <value>PageSettings</value>
+  </data>
+  <data name="&gt;&gt;LabelSimSwap.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="TextSimSwapFolder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 40</value>
+  </data>
+  <data name="TextSimSwapFolder.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="TextSimSwapFolder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>528, 29</value>
+  </data>
+  <data name="TextSimSwapFolder.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;TextSimSwapFolder.Name" xml:space="preserve">
+    <value>TextSimSwapFolder</value>
+  </data>
+  <data name="&gt;&gt;TextSimSwapFolder.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TextSimSwapFolder.Parent" xml:space="preserve">
+    <value>PageSettings</value>
+  </data>
+  <data name="&gt;&gt;TextSimSwapFolder.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="ButtonAnaconda.Location" type="System.Drawing.Point, System.Drawing">
+    <value>656, 5</value>
+  </data>
+  <data name="ButtonAnaconda.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="ButtonAnaconda.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 25</value>
+  </data>
+  <data name="ButtonAnaconda.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="ButtonAnaconda.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="&gt;&gt;ButtonAnaconda.Name" xml:space="preserve">
+    <value>ButtonAnaconda</value>
+  </data>
+  <data name="&gt;&gt;ButtonAnaconda.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonAnaconda.Parent" xml:space="preserve">
+    <value>PageSettings</value>
+  </data>
+  <data name="&gt;&gt;ButtonAnaconda.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="LabelAnaconda.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LabelAnaconda.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 10</value>
+  </data>
+  <data name="LabelAnaconda.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="LabelAnaconda.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 21</value>
+  </data>
+  <data name="LabelAnaconda.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="LabelAnaconda.Text" xml:space="preserve">
+    <value>Anaconda folder</value>
+  </data>
+  <data name="&gt;&gt;LabelAnaconda.Name" xml:space="preserve">
+    <value>LabelAnaconda</value>
+  </data>
+  <data name="&gt;&gt;LabelAnaconda.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LabelAnaconda.Parent" xml:space="preserve">
+    <value>PageSettings</value>
+  </data>
+  <data name="&gt;&gt;LabelAnaconda.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="TextAnaconda.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 5</value>
+  </data>
+  <data name="TextAnaconda.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="TextAnaconda.Size" type="System.Drawing.Size, System.Drawing">
+    <value>528, 29</value>
+  </data>
+  <data name="TextAnaconda.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TextAnaconda.Name" xml:space="preserve">
+    <value>TextAnaconda</value>
+  </data>
+  <data name="&gt;&gt;TextAnaconda.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TextAnaconda.Parent" xml:space="preserve">
+    <value>PageSettings</value>
+  </data>
+  <data name="&gt;&gt;TextAnaconda.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="PageSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 30</value>
+  </data>
+  <data name="PageSettings.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="PageSettings.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="PageSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>772, 486</value>
+  </data>
+  <data name="PageSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="PageSettings.Text" xml:space="preserve">
+    <value>RUN Settings</value>
+  </data>
+  <data name="&gt;&gt;PageSettings.Name" xml:space="preserve">
+    <value>PageSettings</value>
+  </data>
+  <data name="&gt;&gt;PageSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PageSettings.Parent" xml:space="preserve">
+    <value>TabsBlock</value>
+  </data>
+  <data name="&gt;&gt;PageSettings.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Button2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="Button2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="Button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>704, 0</value>
+  </data>
+  <data name="Button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 30</value>
+  </data>
+  <data name="Button2.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="Button2.Text" xml:space="preserve">
+    <value>out</value>
+  </data>
+  <data name="&gt;&gt;Button2.Name" xml:space="preserve">
+    <value>Button2</value>
+  </data>
+  <data name="&gt;&gt;Button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button2.Parent" xml:space="preserve">
+    <value>TabResult</value>
+  </data>
+  <data name="&gt;&gt;Button2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ButtonDelResult.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="ButtonDelResult.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="ButtonDelResult.Location" type="System.Drawing.Point, System.Drawing">
+    <value>628, 0</value>
+  </data>
+  <data name="ButtonDelResult.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 30</value>
+  </data>
+  <data name="ButtonDelResult.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="ButtonDelResult.Text" xml:space="preserve">
+    <value>del</value>
+  </data>
+  <data name="&gt;&gt;ButtonDelResult.Name" xml:space="preserve">
+    <value>ButtonDelResult</value>
+  </data>
+  <data name="&gt;&gt;ButtonDelResult.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonDelResult.Parent" xml:space="preserve">
+    <value>TabResult</value>
+  </data>
+  <data name="&gt;&gt;ButtonDelResult.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ButtonResult.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="ButtonResult.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="ButtonResult.Location" type="System.Drawing.Point, System.Drawing">
+    <value>588, 0</value>
+  </data>
+  <data name="ButtonResult.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 30</value>
+  </data>
+  <data name="ButtonResult.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="ButtonResult.Text" xml:space="preserve">
+    <value>re</value>
+  </data>
+  <data name="&gt;&gt;ButtonResult.Name" xml:space="preserve">
+    <value>ButtonResult</value>
+  </data>
+  <data name="&gt;&gt;ButtonResult.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonResult.Parent" xml:space="preserve">
+    <value>TabResult</value>
+  </data>
+  <data name="&gt;&gt;ButtonResult.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="PictureBoxResult.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="PictureBoxResult.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 35</value>
+  </data>
+  <data name="PictureBoxResult.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="PictureBoxResult.Size" type="System.Drawing.Size, System.Drawing">
+    <value>760, 447</value>
+  </data>
+  <data name="PictureBoxResult.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="PictureBoxResult.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxResult.Name" xml:space="preserve">
+    <value>PictureBoxResult</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxResult.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxResult.Parent" xml:space="preserve">
+    <value>TabResult</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxResult.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="TextBoxResult.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="TextBoxResult.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="TextBoxResult.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 5</value>
+  </data>
+  <data name="TextBoxResult.Size" type="System.Drawing.Size, System.Drawing">
+    <value>572, 29</value>
+  </data>
+  <data name="TextBoxResult.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TextBoxResult.Name" xml:space="preserve">
+    <value>TextBoxResult</value>
+  </data>
+  <data name="&gt;&gt;TextBoxResult.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TextBoxResult.Parent" xml:space="preserve">
+    <value>TabResult</value>
+  </data>
+  <data name="&gt;&gt;TextBoxResult.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="TabResult.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 30</value>
+  </data>
+  <data name="TabResult.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="TabResult.Size" type="System.Drawing.Size, System.Drawing">
+    <value>772, 486</value>
+  </data>
+  <data name="TabResult.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="TabResult.Text" xml:space="preserve">
+    <value>Result</value>
+  </data>
+  <data name="&gt;&gt;TabResult.Name" xml:space="preserve">
+    <value>TabResult</value>
+  </data>
+  <data name="&gt;&gt;TabResult.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TabResult.Parent" xml:space="preserve">
+    <value>TabsBlock</value>
+  </data>
+  <data name="&gt;&gt;TabResult.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="TabsBlock.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="TabsBlock.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 5</value>
+  </data>
+  <data name="TabsBlock.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="TabsBlock.Size" type="System.Drawing.Size, System.Drawing">
+    <value>780, 520</value>
+  </data>
+  <data name="TabsBlock.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TabsBlock.Name" xml:space="preserve">
+    <value>TabsBlock</value>
+  </data>
+  <data name="&gt;&gt;TabsBlock.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TabsBlock.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TabsBlock.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <metadata name="OpenFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
   <metadata name="FolderBrowserDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>159, 17</value>
   </metadata>
+  <data name="ButtonTempFolder.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="ButtonTempFolder.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="ButtonTempFolder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>672, 525</value>
+  </data>
+  <data name="ButtonTempFolder.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="ButtonTempFolder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 35</value>
+  </data>
+  <data name="ButtonTempFolder.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="ButtonTempFolder.Text" xml:space="preserve">
+    <value>Open Temp Folder</value>
+  </data>
+  <data name="&gt;&gt;ButtonTempFolder.Name" xml:space="preserve">
+    <value>ButtonTempFolder</value>
+  </data>
+  <data name="&gt;&gt;ButtonTempFolder.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonTempFolder.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ButtonTempFolder.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="ButtonOpenOutputFolder.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="ButtonOpenOutputFolder.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="ButtonOpenOutputFolder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>592, 525</value>
+  </data>
+  <data name="ButtonOpenOutputFolder.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="ButtonOpenOutputFolder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 35</value>
+  </data>
+  <data name="ButtonOpenOutputFolder.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="ButtonOpenOutputFolder.Text" xml:space="preserve">
+    <value>OUTPUT Folder</value>
+  </data>
+  <data name="&gt;&gt;ButtonOpenOutputFolder.Name" xml:space="preserve">
+    <value>ButtonOpenOutputFolder</value>
+  </data>
+  <data name="&gt;&gt;ButtonOpenOutputFolder.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonOpenOutputFolder.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ButtonOpenOutputFolder.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="LabelLast.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="LabelLast.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LabelLast.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="LabelLast.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 523</value>
+  </data>
+  <data name="LabelLast.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="LabelLast.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 21</value>
+  </data>
+  <data name="LabelLast.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="LabelLast.Text" xml:space="preserve">
+    <value>Last:</value>
+  </data>
+  <data name="&gt;&gt;LabelLast.Name" xml:space="preserve">
+    <value>LabelLast</value>
+  </data>
+  <data name="&gt;&gt;LabelLast.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LabelLast.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LabelLast.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="LabelLastFileName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="LabelLastFileName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LabelLastFileName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="LabelLastFileName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 540</value>
+  </data>
+  <data name="LabelLastFileName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="LabelLastFileName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 21</value>
+  </data>
+  <data name="LabelLastFileName.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="LabelLastFileName.Text" xml:space="preserve">
+    <value>no file</value>
+  </data>
+  <data name="&gt;&gt;LabelLastFileName.Name" xml:space="preserve">
+    <value>LabelLastFileName</value>
+  </data>
+  <data name="&gt;&gt;LabelLastFileName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LabelLastFileName.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LabelLastFileName.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="ButtonOpenLastFile.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="ButtonOpenLastFile.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="ButtonOpenLastFile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>552, 525</value>
+  </data>
+  <data name="ButtonOpenLastFile.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="ButtonOpenLastFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 35</value>
+  </data>
+  <data name="ButtonOpenLastFile.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="ButtonOpenLastFile.Text" xml:space="preserve">
+    <value>.</value>
+  </data>
+  <data name="&gt;&gt;ButtonOpenLastFile.Name" xml:space="preserve">
+    <value>ButtonOpenLastFile</value>
+  </data>
+  <data name="&gt;&gt;ButtonOpenLastFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonOpenLastFile.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ButtonOpenLastFile.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Button1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="Button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>752, 530</value>
+  </data>
+  <data name="Button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 25</value>
+  </data>
+  <data name="Button1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="Button1.Text" xml:space="preserve">
+    <value>~</value>
+  </data>
+  <data name="&gt;&gt;Button1.Name" xml:space="preserve">
+    <value>Button1</value>
+  </data>
+  <data name="&gt;&gt;Button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Button1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>57</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>784, 561</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAEBAAAAEAGABoAwAAFgAAACgAAAAQAAAAIAAAAAEAGAAAAAAAAAMAAAAAAAAAAAAAAAAAAAAA
@@ -86,5 +2813,38 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPCEtLQok
         KCdib2R5JykuZXEoMCkuY3NzKCd3aWR0aCcpCi0tPgo=
 </value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>800, 600</value>
+  </data>
+  <data name="$this.RightToLeftLayout" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>Manual</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>ReFace</value>
+  </data>
+  <data name="&gt;&gt;OpenFileDialog1.Name" xml:space="preserve">
+    <value>OpenFileDialog1</value>
+  </data>
+  <data name="&gt;&gt;OpenFileDialog1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FolderBrowserDialog1.Name" xml:space="preserve">
+    <value>FolderBrowserDialog1</value>
+  </data>
+  <data name="&gt;&gt;FolderBrowserDialog1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FolderBrowserDialog, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>F</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>
